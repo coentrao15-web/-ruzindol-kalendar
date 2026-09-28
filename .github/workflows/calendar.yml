@@ -1,0 +1,39 @@
+name: Aktualizovať kalendár OŠK Ružindol
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'build_calendar.py'
+      - '.github/workflows/calendar.yml'
+  schedule:
+    - cron: '17 2,8,14,20 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ruzindol-calendar
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Načítať zápasy a vytvoriť kalendár
+        run: python build_calendar.py
+      - name: Zverejniť aktualizovaný kalendár
+        run: |
+          git add public/ruzindol.ics public/status.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update OSK Ruzindol fixtures"
+            git push
+          fi
