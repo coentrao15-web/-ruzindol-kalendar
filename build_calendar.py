@@ -8,6 +8,7 @@ import re
 import sys
 import urllib.parse
 import urllib.request
+import uuid
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -119,8 +120,14 @@ def event(match, category, generated_at):
     ]
     # Relative alerts follow the match if its start time changes.
     for trigger in ("-P1D", "-PT2H", "-PT15M"):
+        alarm_uid = str(uuid.uuid5(
+            uuid.NAMESPACE_URL,
+            f"https://ruzindol.sk/calendar/football/{match_id}/{trigger}",
+        )).upper()
         lines += [
             "BEGIN:VALARM",
+            "UID:" + alarm_uid,
+            "X-WR-ALARMUID:" + alarm_uid,
             "ACTION:DISPLAY",
             "TRIGGER;RELATED=START:" + trigger,
             "DESCRIPTION:" + escape(title),
