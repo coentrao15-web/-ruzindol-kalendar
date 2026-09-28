@@ -210,6 +210,19 @@ def event(start, source_url, generated_at):
         "STATUS:CONFIRMED",
         "TRANSP:OPAQUE",
     ]
+    default_alarm_uid = str(uuid.uuid5(
+        uuid.NAMESPACE_URL,
+        f"https://ruzindol.sk/calendar/council/{key}/apple-default-none",
+    )).upper()
+    lines += [
+        "BEGIN:VALARM",
+        "UID:" + default_alarm_uid,
+        "X-WR-ALARMUID:" + default_alarm_uid,
+        "TRIGGER;VALUE=DATE-TIME:19760401T005545Z",
+        "X-APPLE-DEFAULT-ALARM:TRUE",
+        "ACTION:NONE",
+        "END:VALARM",
+    ]
     for trigger in ALERTS:
         alarm_uid = str(uuid.uuid5(
             uuid.NAMESPACE_URL,
