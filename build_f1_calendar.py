@@ -122,7 +122,8 @@ def timed_event(year, race, session_key, generated_at):
     round_number = int(race["round"])
     grand_prix = race["raceName"]
     title = f"{icon} F1 – {name} – {grand_prix}"
-    event_uid = f"f1-{year}-r{round_number:02d}-{session_key.lower()}@ruzindol-kalendar"
+    # v2 prevents Apple Calendar from reusing the cached alarms from the first feed.
+    event_uid = f"f1-{year}-r{round_number:02d}-{session_key.lower()}-v2@ruzindol-kalendar"
     circuit = race.get("Circuit") or {}
     location_data = circuit.get("Location") or {}
     location = ", ".join(filter(None, [
@@ -133,6 +134,7 @@ def timed_event(year, race, session_key, generated_at):
         "BEGIN:VEVENT",
         "UID:" + event_uid,
         "DTSTAMP:" + generated_at.strftime("%Y%m%dT%H%M%SZ"),
+        "SEQUENCE:2",
         "DTSTART:" + start.strftime("%Y%m%dT%H%M%SZ"),
         "DTEND:" + (start + dt.timedelta(minutes=duration)).strftime("%Y%m%dT%H%M%SZ"),
         "SUMMARY:" + escape(title),
@@ -151,12 +153,13 @@ def timed_event(year, race, session_key, generated_at):
 def placeholder_event(round_number, name, start_text, end_text, generated_at):
     start = dt.date.fromisoformat(start_text)
     end_exclusive = dt.date.fromisoformat(end_text) + dt.timedelta(days=1)
-    event_uid = f"f1-2027-r{round_number:02d}-weekend@ruzindol-kalendar"
+    event_uid = f"f1-2027-r{round_number:02d}-weekend-v2@ruzindol-kalendar"
     official_url = OFFICIAL.format(year=2027)
     lines = [
         "BEGIN:VEVENT",
         "UID:" + event_uid,
         "DTSTAMP:" + generated_at.strftime("%Y%m%dT%H%M%SZ"),
+        "SEQUENCE:2",
         "DTSTART;VALUE=DATE:" + start.strftime("%Y%m%d"),
         "DTEND;VALUE=DATE:" + end_exclusive.strftime("%Y%m%d"),
         "SUMMARY:" + escape(f"📅 F1 2027 – {name} (časy ešte nie sú potvrdené)"),
@@ -218,7 +221,7 @@ def main():
         "PRODID:-//Ruzindol calendar//Formula 1 schedule//SK",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
-        "X-WR-CALNAME:Formula 1 – tréningy, kvalifikácie a preteky",
+        "X-WR-CALNAME:Formula 1 – upozornenia 1 h + 5 min",
         "X-WR-TIMEZONE:Europe/Bratislava",
         "REFRESH-INTERVAL;VALUE=DURATION:PT6H",
         "X-PUBLISHED-TTL:PT6H",
@@ -229,7 +232,9 @@ def main():
 
     output = Path("public/formula1.ics")
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_bytes(("\r\n".join(folded(line) for line in lines) + "\r\n").encode("utf-8"))
+    calendar_bytes = ("\r\n".join(folded(line) for line in lines) + "\r\n").encode("utf-8")
+    output.write_bytes(calendar_bytes)
+    Path("public/formula1-v2.ics").write_bytes(calendar_bytes)
     Path("public/formula1-status.json").write_text(json.dumps({
         "updated_utc": generated_at.isoformat(),
         "years": list(YEARS),
