@@ -1,0 +1,28 @@
+{
+  "updated_utc": "2026-09-28T21:46:53.803126+00:00",
+  "future_matches": 38,
+  "matches_with_confirmed_tv_channel": 0,
+  "provisional_kickoff_times": 16,
+  "reminder": "5 minutes before",
+  "fixtures_source": "https://www.sofascore.com/api/v1/team/2672/events/next/0",
+  "tv_source": "https://tv-program.sk",
+  "tv_channels_checked": [
+    "Nova Sport 1",
+    "Nova Sport 2",
+    "Nova Sport 3",
+    "Nova Sport 4",
+    "Nova Sport 5",
+    "Nova Sport 6",
+    "Sport 1",
+    "Sport 2",
+    "Premier Sport 1",
+    "Premier Sport 2",
+    "Premier Sport 3",
+    "Premier Sport 4",
+    "ČT sport",
+    "JOJ Šport",
+    "JOJ Šport 2",
+    "STVR Šport",
+    "CANAL+ Sport"
+  ]
+}

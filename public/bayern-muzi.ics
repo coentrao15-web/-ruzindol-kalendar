@@ -1,0 +1,902 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ruzindol calendar//FC Bayern Muenchen men//SK
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:FC Bayern München – muži
+X-WR-TIMEZONE:Europe/Bratislava
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:bayern-men-16434057-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261010T133000Z
+DTEND:20261010T153000Z
+SUMMARY:⚽ FC Augsburg – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-fc-augsburg/acbsxdb#
+ id:16434057.
+URL:https://www.sofascore.com/fc-bayern-munchen-fc-augsburg/acbsxdb#id:1643
+ 4057
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:B57613A1-AD38-5727-8585-E2A837A43A18
+X-WR-ALARMUID:B57613A1-AD38-5727-8585-E2A837A43A18
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Augsburg – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16939021-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261013T190000Z
+DTEND:20261013T210000Z
+SUMMARY:⚽ Viking FK – FC Bayern München (UEFA Champions League)
+DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
+ otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
+ nAktuálny termín: https://www.sofascore.com/fc-bayern-munchen-viking-fk/
+ oysxdb#id:16939021.
+URL:https://www.sofascore.com/fc-bayern-munchen-viking-fk/oysxdb#id:1693902
+ 1
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:5040E752-B300-57B0-909F-5C701ACDE12C
+X-WR-ALARMUID:5040E752-B300-57B0-909F-5C701ACDE12C
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ Viking FK – FC Bayern München (UEFA Champions League)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434062-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261017T163000Z
+DTEND:20261017T183000Z
+SUMMARY:⚽ FC Bayern München – RB Leipzig (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/rb-leipzig-fc-bayern-munchen/xdbskCo#i
+ d:16434062.
+URL:https://www.sofascore.com/rb-leipzig-fc-bayern-munchen/xdbskCo#id:16434
+ 062
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:5F008DB6-3F78-5D19-AB30-7CE6F71238EB
+X-WR-ALARMUID:5F008DB6-3F78-5D19-AB30-7CE6F71238EB
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – RB Leipzig (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16938859-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261021T190000Z
+DTEND:20261021T210000Z
+SUMMARY:⚽ FC Bayern München – Arsenal (UEFA Champions League)
+DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
+ otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
+ nAktuálny termín: https://www.sofascore.com/fc-bayern-munchen-arsenal/Rs
+ xdb#id:16938859.
+URL:https://www.sofascore.com/fc-bayern-munchen-arsenal/Rsxdb#id:16938859
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:047E33C7-AF54-5B69-9854-C9962A058B5A
+X-WR-ALARMUID:047E33C7-AF54-5B69-9854-C9962A058B5A
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – Arsenal (UEFA Champions League)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434075-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261025T163000Z
+DTEND:20261025T183000Z
+SUMMARY:⚽ SC Freiburg – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-sc-freiburg/Nabsxdb#
+ id:16434075.
+URL:https://www.sofascore.com/fc-bayern-munchen-sc-freiburg/Nabsxdb#id:1643
+ 4075
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:E8B62986-AC17-545A-A513-C8BF426DA8B5
+X-WR-ALARMUID:E8B62986-AC17-545A-A513-C8BF426DA8B5
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ SC Freiburg – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-17014302-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261028T194500Z
+DTEND:20261028T214500Z
+SUMMARY:⚽ FC Bayern München – 1. FC Magdeburg (DFB Pokal)
+DESCRIPTION:Súťaž: DFB Pokal\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-1-fc-magdeburg/Qbbsx
+ db#id:17014302.
+URL:https://www.sofascore.com/fc-bayern-munchen-1-fc-magdeburg/Qbbsxdb#id:1
+ 7014302
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:B74B0863-9C5E-57E9-8E90-A399D878C1CC
+X-WR-ALARMUID:B74B0863-9C5E-57E9-8E90-A399D878C1CC
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – 1. FC Magdeburg (DFB Pokal)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434076-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261031T173000Z
+DTEND:20261031T193000Z
+SUMMARY:⚽ FC Bayern München – Borussia Dortmund (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/borussia-dortmund-fc-bayern-munchen/xd
+ bsydb#id:16434076.
+URL:https://www.sofascore.com/borussia-dortmund-fc-bayern-munchen/xdbsydb#i
+ d:16434076
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:ED4D8463-C442-5D36-AB56-FC649F5AA31D
+X-WR-ALARMUID:ED4D8463-C442-5D36-AB56-FC649F5AA31D
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – Borussia Dortmund (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16938788-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261103T200000Z
+DTEND:20261103T220000Z
+SUMMARY:⚽ Atlético Madrid – FC Bayern München (UEFA Champions League)
+DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
+ otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
+ nAktuálny termín: https://www.sofascore.com/atletico-madrid-fc-bayern-mu
+ nchen/xdbsLgb#id:16938788.
+URL:https://www.sofascore.com/atletico-madrid-fc-bayern-munchen/xdbsLgb#id:
+ 16938788
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:2291A81A-DCB3-53C2-A30B-F8C84A80FD18
+X-WR-ALARMUID:2291A81A-DCB3-53C2-A30B-F8C84A80FD18
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ Atlético Madrid – FC Bayern München (UEFA Champions Lea
+ gue)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434091-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261107T143000Z
+DTEND:20261107T163000Z
+SUMMARY:⚽ 1. FSV Mainz 05 – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-1-fsv-mainz-05/gbbsx
+ db#id:16434091.
+URL:https://www.sofascore.com/fc-bayern-munchen-1-fsv-mainz-05/gbbsxdb#id:1
+ 6434091
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:BE8EBE1D-2F4C-5E27-BE61-4D9D55ABCC2F
+X-WR-ALARMUID:BE8EBE1D-2F4C-5E27-BE61-4D9D55ABCC2F
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ 1. FSV Mainz 05 – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434097-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261120T193000Z
+DTEND:20261120T213000Z
+SUMMARY:⚽ FC Bayern München – 1. FC Köln (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-1-fc-koln/wdbsxdb#id
+ :16434097.
+URL:https://www.sofascore.com/fc-bayern-munchen-1-fc-koln/wdbsxdb#id:164340
+ 97
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:B29BF9C7-600A-5CC0-B50D-D1D492881C76
+X-WR-ALARMUID:B29BF9C7-600A-5CC0-B50D-D1D492881C76
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – 1. FC Köln (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16938990-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261125T200000Z
+DTEND:20261125T220000Z
+SUMMARY:⚽ Lille – FC Bayern München (UEFA Champions League)
+DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
+ otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
+ nAktuálny termín: https://www.sofascore.com/fc-bayern-munchen-lille/THsx
+ db#id:16938990.
+URL:https://www.sofascore.com/fc-bayern-munchen-lille/THsxdb#id:16938990
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:FE5304B3-C7CF-5218-A0F9-833B2E8D828B
+X-WR-ALARMUID:FE5304B3-C7CF-5218-A0F9-833B2E8D828B
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ Lille – FC Bayern München (UEFA Champions League)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434112-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261128T143000Z
+DTEND:20261128T163000Z
+SUMMARY:⚽ Hamburger SV – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/hamburger-sv-fc-bayern-munchen/xdbsBdb
+ #id:16434112.
+URL:https://www.sofascore.com/hamburger-sv-fc-bayern-munchen/xdbsBdb#id:164
+ 34112
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:AE5B1D11-8461-56C7-A9B6-CAA97270F0C2
+X-WR-ALARMUID:AE5B1D11-8461-56C7-A9B6-CAA97270F0C2
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ Hamburger SV – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434116-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261205T100000Z
+DTEND:20261205T120000Z
+SUMMARY:⚽ FC Bayern München – SC Paderborn 07 (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-sc-paderborn-07/lbbs
+ xdb#id:16434116. Termín je zatiaľ orientačný a po potvrdení sa automa
+ ticky upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-sc-paderborn-07/lbbsxdb#id:
+ 16434116
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:A61B408F-B385-51E2-9153-9CAF0B82FECB
+X-WR-ALARMUID:A61B408F-B385-51E2-9153-9CAF0B82FECB
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – SC Paderborn 07 (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16938861-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261208T200000Z
+DTEND:20261208T220000Z
+SUMMARY:⚽ FC Bayern München – SK Slavia Praha (UEFA Champions League)
+DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
+ otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
+ nAktuálny termín: https://www.sofascore.com/fc-bayern-munchen-sk-slavia-
+ praha/qUsxdb#id:16938861.
+URL:https://www.sofascore.com/fc-bayern-munchen-sk-slavia-praha/qUsxdb#id:1
+ 6938861
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:033663F6-1D3A-5396-B8D0-77B1B9F0904A
+X-WR-ALARMUID:033663F6-1D3A-5396-B8D0-77B1B9F0904A
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – SK Slavia Praha (UEFA Champions Leag
+ ue)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434125-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261212T100000Z
+DTEND:20261212T120000Z
+SUMMARY:⚽ TSG Hoffenheim – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-tsg-hoffenheim/ubbsx
+ db#id:16434125. Termín je zatiaľ orientačný a po potvrdení sa automat
+ icky upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-tsg-hoffenheim/ubbsxdb#id:1
+ 6434125
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:786A74D2-7E8F-5623-8461-C77DD9DF9662
+X-WR-ALARMUID:786A74D2-7E8F-5623-8461-C77DD9DF9662
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ TSG Hoffenheim – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434133-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20261219T100000Z
+DTEND:20261219T120000Z
+SUMMARY:⚽ FC Bayern München – SV Werder Bremen (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-sv-werder-bremen/Jab
+ sxdb#id:16434133. Termín je zatiaľ orientačný a po potvrdení sa autom
+ aticky upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-sv-werder-bremen/Jabsxdb#id
+ :16434133
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:F619E89B-27DB-5C64-9B57-8C37814C837B
+X-WR-ALARMUID:F619E89B-27DB-5C64-9B57-8C37814C837B
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – SV Werder Bremen (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434147-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270109T100000Z
+DTEND:20270109T120000Z
+SUMMARY:⚽ Borussia M'gladbach – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-borussia-mgladbach/C
+ absxdb#id:16434147. Termín je zatiaľ orientačný a po potvrdení sa aut
+ omaticky upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-borussia-mgladbach/Cabsxdb#
+ id:16434147
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:40F4AA51-B309-55F8-9DB0-524E03EE868D
+X-WR-ALARMUID:40F4AA51-B309-55F8-9DB0-524E03EE868D
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ Borussia M'gladbach – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434160-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270113T100000Z
+DTEND:20270113T120000Z
+SUMMARY:⚽ FC Bayern München – Bayer 04 Leverkusen (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/bayer-04-leverkusen-fc-bayern-munchen/
+ xdbsGdb#id:16434160. Termín je zatiaľ orientačný a po potvrdení sa au
+ tomaticky upraví.
+URL:https://www.sofascore.com/bayer-04-leverkusen-fc-bayern-munchen/xdbsGdb
+ #id:16434160
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:41168D7B-E2DA-55A2-ADEE-EF681797513E
+X-WR-ALARMUID:41168D7B-E2DA-55A2-ADEE-EF681797513E
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – Bayer 04 Leverkusen (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434166-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270116T100000Z
+DTEND:20270116T120000Z
+SUMMARY:⚽ Eintracht Frankfurt – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/eintracht-frankfurt-fc-bayern-munchen/
+ xdbszdb#id:16434166. Termín je zatiaľ orientačný a po potvrdení sa au
+ tomaticky upraví.
+URL:https://www.sofascore.com/eintracht-frankfurt-fc-bayern-munchen/xdbszdb
+ #id:16434166
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:0EF682F9-C7FC-5B18-A9F8-FB8B94A31227
+X-WR-ALARMUID:0EF682F9-C7FC-5B18-A9F8-FB8B94A31227
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ Eintracht Frankfurt – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16938877-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270120T200000Z
+DTEND:20270120T220000Z
+SUMMARY:⚽ Manchester United – FC Bayern München (UEFA Champions League
+ )
+DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
+ otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
+ nAktuálny termín: https://www.sofascore.com/fc-bayern-munchen-manchester
+ -united/Ksxdb#id:16938877.
+URL:https://www.sofascore.com/fc-bayern-munchen-manchester-united/Ksxdb#id:
+ 16938877
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:C75BC4D8-0393-5F7D-BB02-896D2B929C1E
+X-WR-ALARMUID:C75BC4D8-0393-5F7D-BB02-896D2B929C1E
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ Manchester United – FC Bayern München (UEFA Champions Le
+ ague)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434174-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270123T100000Z
+DTEND:20270123T120000Z
+SUMMARY:⚽ VfB Stuttgart – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/vfb-stuttgart-fc-bayern-munchen/xdbsCd
+ b#id:16434174. Termín je zatiaľ orientačný a po potvrdení sa automati
+ cky upraví.
+URL:https://www.sofascore.com/vfb-stuttgart-fc-bayern-munchen/xdbsCdb#id:16
+ 434174
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:56C8D613-6976-5D58-BCA6-F4A77A9B6BCF
+X-WR-ALARMUID:56C8D613-6976-5D58-BCA6-F4A77A9B6BCF
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ VfB Stuttgart – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16938860-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270127T200000Z
+DTEND:20270127T220000Z
+SUMMARY:⚽ FC Bayern München – Real Betis (UEFA Champions League)
+DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
+ otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
+ nAktuálny termín: https://www.sofascore.com/real-betis-fc-bayern-munchen
+ /xdbsqgb#id:16938860.
+URL:https://www.sofascore.com/real-betis-fc-bayern-munchen/xdbsqgb#id:16938
+ 860
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:74CB75EE-308E-5844-AE03-0F7C7621FE9F
+X-WR-ALARMUID:74CB75EE-308E-5844-AE03-0F7C7621FE9F
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – Real Betis (UEFA Champions League)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434184-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270130T100000Z
+DTEND:20270130T120000Z
+SUMMARY:⚽ FC Bayern München – FC Schalke 04 (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-fc-schalke-04/Fabsxd
+ b#id:16434184. Termín je zatiaľ orientačný a po potvrdení sa automati
+ cky upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-fc-schalke-04/Fabsxdb#id:16
+ 434184
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:F643F8CF-584F-5208-A656-132805C0C0CB
+X-WR-ALARMUID:F643F8CF-584F-5208-A656-132805C0C0CB
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – FC Schalke 04 (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434190-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270206T100000Z
+DTEND:20270206T120000Z
+SUMMARY:⚽ FC Bayern München – SV 07 Elversberg (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-sv-07-elversberg/Ybb
+ sxdb#id:16434190. Termín je zatiaľ orientačný a po potvrdení sa autom
+ aticky upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-sv-07-elversberg/Ybbsxdb#id
+ :16434190
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:1B874E45-F539-5A5A-8E7D-C594A1E52FF6
+X-WR-ALARMUID:1B874E45-F539-5A5A-8E7D-C594A1E52FF6
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – SV 07 Elversberg (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434204-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270213T100000Z
+DTEND:20270213T120000Z
+SUMMARY:⚽ 1. FC Union Berlin – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-1-fc-union-berlin/Xa
+ bsxdb#id:16434204. Termín je zatiaľ orientačný a po potvrdení sa auto
+ maticky upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-1-fc-union-berlin/Xabsxdb#i
+ d:16434204
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:7B221F8D-B1A8-52CA-977B-1D51B3705229
+X-WR-ALARMUID:7B221F8D-B1A8-52CA-977B-1D51B3705229
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ 1. FC Union Berlin – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434206-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270220T100000Z
+DTEND:20270220T120000Z
+SUMMARY:⚽ FC Bayern München – FC Augsburg (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-fc-augsburg/acbsxdb#
+ id:16434206. Termín je zatiaľ orientačný a po potvrdení sa automatick
+ y upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-fc-augsburg/acbsxdb#id:1643
+ 4206
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:9A3A40E7-AD38-5F9B-A78B-876046E144D9
+X-WR-ALARMUID:9A3A40E7-AD38-5F9B-A78B-876046E144D9
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – FC Augsburg (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434216-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270227T100000Z
+DTEND:20270227T120000Z
+SUMMARY:⚽ RB Leipzig – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/rb-leipzig-fc-bayern-munchen/xdbskCo#i
+ d:16434216. Termín je zatiaľ orientačný a po potvrdení sa automaticky
+  upraví.
+URL:https://www.sofascore.com/rb-leipzig-fc-bayern-munchen/xdbskCo#id:16434
+ 216
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:6464C2BA-12E3-527E-8B24-DF7B0073960B
+X-WR-ALARMUID:6464C2BA-12E3-527E-8B24-DF7B0073960B
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ RB Leipzig – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434223-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270303T100000Z
+DTEND:20270303T120000Z
+SUMMARY:⚽ FC Bayern München – SC Freiburg (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-sc-freiburg/Nabsxdb#
+ id:16434223. Termín je zatiaľ orientačný a po potvrdení sa automatick
+ y upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-sc-freiburg/Nabsxdb#id:1643
+ 4223
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:06DDD62A-E5D5-5B2D-8BEA-9FA3ED548665
+X-WR-ALARMUID:06DDD62A-E5D5-5B2D-8BEA-9FA3ED548665
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – SC Freiburg (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434231-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270306T100000Z
+DTEND:20270306T120000Z
+SUMMARY:⚽ Borussia Dortmund – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/borussia-dortmund-fc-bayern-munchen/xd
+ bsydb#id:16434231. Termín je zatiaľ orientačný a po potvrdení sa auto
+ maticky upraví.
+URL:https://www.sofascore.com/borussia-dortmund-fc-bayern-munchen/xdbsydb#i
+ d:16434231
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:F928B951-A4CC-54EE-9D35-7F1DB6EDB0B6
+X-WR-ALARMUID:F928B951-A4CC-54EE-9D35-7F1DB6EDB0B6
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ Borussia Dortmund – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434246-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270313T100000Z
+DTEND:20270313T120000Z
+SUMMARY:⚽ FC Bayern München – 1. FSV Mainz 05 (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-1-fsv-mainz-05/gbbsx
+ db#id:16434246. Termín je zatiaľ orientačný a po potvrdení sa automat
+ icky upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-1-fsv-mainz-05/gbbsxdb#id:1
+ 6434246
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:134D7586-8D2E-5A08-89ED-D11707C02AA8
+X-WR-ALARMUID:134D7586-8D2E-5A08-89ED-D11707C02AA8
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – 1. FSV Mainz 05 (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434260-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270320T100000Z
+DTEND:20270320T120000Z
+SUMMARY:⚽ 1. FC Köln – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-1-fc-koln/wdbsxdb#id
+ :16434260. Termín je zatiaľ orientačný a po potvrdení sa automaticky 
+ upraví.
+URL:https://www.sofascore.com/fc-bayern-munchen-1-fc-koln/wdbsxdb#id:164342
+ 60
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:63496433-A8D1-5616-823D-D81BF0177886
+X-WR-ALARMUID:63496433-A8D1-5616-823D-D81BF0177886
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ 1. FC Köln – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434261-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270403T100000Z
+DTEND:20270403T120000Z
+SUMMARY:⚽ FC Bayern München – Hamburger SV (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/hamburger-sv-fc-bayern-munchen/xdbsBdb
+ #id:16434261.
+URL:https://www.sofascore.com/hamburger-sv-fc-bayern-munchen/xdbsBdb#id:164
+ 34261
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:2638874D-BA82-504D-BD14-F84C26E1BE69
+X-WR-ALARMUID:2638874D-BA82-504D-BD14-F84C26E1BE69
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – Hamburger SV (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434278-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270410T100000Z
+DTEND:20270410T120000Z
+SUMMARY:⚽ SC Paderborn 07 – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-sc-paderborn-07/lbbs
+ xdb#id:16434278.
+URL:https://www.sofascore.com/fc-bayern-munchen-sc-paderborn-07/lbbsxdb#id:
+ 16434278
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:CBAC8559-7390-524A-A4B8-50E39864C9AE
+X-WR-ALARMUID:CBAC8559-7390-524A-A4B8-50E39864C9AE
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ SC Paderborn 07 – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434281-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270417T100000Z
+DTEND:20270417T120000Z
+SUMMARY:⚽ FC Bayern München – TSG Hoffenheim (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-tsg-hoffenheim/ubbsx
+ db#id:16434281.
+URL:https://www.sofascore.com/fc-bayern-munchen-tsg-hoffenheim/ubbsxdb#id:1
+ 6434281
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:574364F0-DDC5-5C02-9678-3250B6491041
+X-WR-ALARMUID:574364F0-DDC5-5C02-9678-3250B6491041
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – TSG Hoffenheim (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434297-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270424T100000Z
+DTEND:20270424T120000Z
+SUMMARY:⚽ SV Werder Bremen – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-sv-werder-bremen/Jab
+ sxdb#id:16434297.
+URL:https://www.sofascore.com/fc-bayern-munchen-sv-werder-bremen/Jabsxdb#id
+ :16434297
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:15E8D099-D2AE-5910-ADF9-D1BD7FB05152
+X-WR-ALARMUID:15E8D099-D2AE-5910-ADF9-D1BD7FB05152
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ SV Werder Bremen – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434295-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270508T100000Z
+DTEND:20270508T120000Z
+SUMMARY:⚽ FC Bayern München – Borussia M'gladbach (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/fc-bayern-munchen-borussia-mgladbach/C
+ absxdb#id:16434295.
+URL:https://www.sofascore.com/fc-bayern-munchen-borussia-mgladbach/Cabsxdb#
+ id:16434295
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:22F0B941-204C-5C89-A3B0-B79EC8F71D3F
+X-WR-ALARMUID:22F0B941-204C-5C89-A3B0-B79EC8F71D3F
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – Borussia M'gladbach (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434307-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270515T100000Z
+DTEND:20270515T120000Z
+SUMMARY:⚽ Bayer 04 Leverkusen – FC Bayern München (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/bayer-04-leverkusen-fc-bayern-munchen/
+ xdbsGdb#id:16434307.
+URL:https://www.sofascore.com/bayer-04-leverkusen-fc-bayern-munchen/xdbsGdb
+ #id:16434307
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:09B828A0-14AA-5B19-A099-6C802870AB8D
+X-WR-ALARMUID:09B828A0-14AA-5B19-A099-6C802870AB8D
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ Bayer 04 Leverkusen – FC Bayern München (Bundesliga)
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bayern-men-16434317-v1@ruzindol-kalendar
+DTSTAMP:20260928T214653Z
+SEQUENCE:1
+DTSTART:20270522T133000Z
+DTEND:20270522T153000Z
+SUMMARY:⚽ FC Bayern München – Eintracht Frankfurt (Bundesliga)
+DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
+ – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
+  termín: https://www.sofascore.com/eintracht-frankfurt-fc-bayern-munchen/
+ xdbszdb#id:16434317.
+URL:https://www.sofascore.com/eintracht-frankfurt-fc-bayern-munchen/xdbszdb
+ #id:16434317
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+BEGIN:VALARM
+UID:829CF3C1-F1C6-5739-B7D5-CBD578D035B6
+X-WR-ALARMUID:829CF3C1-F1C6-5739-B7D5-CBD578D035B6
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT5M
+DESCRIPTION:⚽ FC Bayern München – Eintracht Frankfurt (Bundesliga)
+END:VALARM
+END:VEVENT
+END:VCALENDAR

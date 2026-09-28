@@ -78,3 +78,15 @@ Odoberaná adresa:
 
 Kontrola poslednej úspešnej aktualizácie:
 `https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/formula1-status.json`
+
+## FC Bayern München – muži
+
+Samostatný kalendár obsahuje budúce zápasy mužov Bayernu vo všetkých súťažiach.
+Má upozornenie 5 minút pred začiatkom a v popise sleduje potvrdené slovenské
+a české TV kanály. Rozpis aj TV program sa kontrolujú štyrikrát denne.
+
+Odoberaná adresa:
+`https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/bayern-muzi.ics`
+
+Kontrola poslednej úspešnej aktualizácie:
+`https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/bayern-status.json`
