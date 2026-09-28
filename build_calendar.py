@@ -118,6 +118,20 @@ def event(match, category, generated_at):
         "URL:" + url,
         "TRANSP:OPAQUE",
     ]
+    # Prevent iPhone's global default alert from being added to subscribed events.
+    default_alarm_uid = str(uuid.uuid5(
+        uuid.NAMESPACE_URL,
+        f"https://ruzindol.sk/calendar/football/{match_id}/apple-default-none",
+    )).upper()
+    lines += [
+        "BEGIN:VALARM",
+        "UID:" + default_alarm_uid,
+        "X-WR-ALARMUID:" + default_alarm_uid,
+        "TRIGGER;VALUE=DATE-TIME:19760401T005545Z",
+        "X-APPLE-DEFAULT-ALARM:TRUE",
+        "ACTION:NONE",
+        "END:VALARM",
+    ]
     # Relative alerts follow the match if its start time changes.
     for trigger in ("-P1D", "-PT2H", "-PT15M"):
         alarm_uid = str(uuid.uuid5(
