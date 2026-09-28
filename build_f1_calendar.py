@@ -90,18 +90,6 @@ def stable_uuid(value):
 
 def alarm_lines(event_uid, title):
     lines = []
-    # Apple Calendar sometimes adds its subscribed-calendar default reminder.
-    # This explicit NONE alarm suppresses it, leaving exactly our two reminders.
-    default_uid = stable_uuid(event_uid + ":apple-default-none")
-    lines += [
-        "BEGIN:VALARM",
-        "UID:" + default_uid,
-        "X-WR-ALARMUID:" + default_uid,
-        "TRIGGER;VALUE=DATE-TIME:19760401T005545Z",
-        "X-APPLE-DEFAULT-ALARM:TRUE",
-        "ACTION:NONE",
-        "END:VALARM",
-    ]
     for label, trigger in (("1 hodinu", "-PT1H"), ("5 minút", "-PT5M")):
         alarm_uid = stable_uuid(event_uid + ":" + trigger)
         lines += [
