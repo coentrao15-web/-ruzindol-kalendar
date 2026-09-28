@@ -1,0 +1,39 @@
+name: Aktualizovať kalendár zastupiteľstva Ružindol
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'build_council_calendar.py'
+      - '.github/workflows/council.yml'
+  schedule:
+    - cron: '37 2,8,14,20 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ruzindol-council-calendar
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Načítať termíny a vytvoriť kalendár
+        run: python build_council_calendar.py
+      - name: Zverejniť aktualizovaný kalendár
+        run: |
+          git add public/ruzindol-zastupitelstvo.ics public/zastupitelstvo-status.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update Ruzindol council meetings"
+            git push
+          fi

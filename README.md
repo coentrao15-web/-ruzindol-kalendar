@@ -51,3 +51,16 @@ Každý zápas obsahuje tri upozornenia: 1 deň, 2 hodiny a 15 minút pred
 začiatkom. Platí to aj pre nové zápasy. Pri presunutí zápasu sa upozornenia
 počítajú od nového začiatku. V iPhone musia byť pre tento odoberaný kalendár
 zapnuté hlásenia udalostí a povolené hlásenia aplikácie Kalendár.
+
+## Obecné zastupiteľstvo Ružindol
+
+Samostatný odoberaný kalendár sleduje oficiálny zoznam termínov aj nové
+pozvánky na úradnej tabuli obce. Pozvánka má prednosť pred ročným plánom.
+Kontrola prebieha štyrikrát denne a pri každom zasadnutí sú upozornenia 1 deň
+a 1 hodinu pred začiatkom. Koniec je odhadnutý na 3 hodiny po začiatku.
+
+Odoberaná adresa:
+`https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/ruzindol-zastupitelstvo.ics`
+
+Kontrola poslednej úspešnej aktualizácie:
+`https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/zastupitelstvo-status.json`
