@@ -14,8 +14,13 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 
-TEAM_ID = 2672
-FIXTURES_URL = f"https://www.sofascore.com/api/v1/team/{TEAM_ID}/events/next/{{page}}"
+TEAM_ID = "132"
+ESPN_LEAGUES = {
+    "ger.1": "Bundesliga",
+    "uefa.champions": "UEFA Champions League",
+    "ger.dfb_pokal": "DFB-Pokal",
+}
+FIXTURES_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/scoreboard?dates={year}&limit=1000"
 OFFICIAL_URL = "https://fcbayern.com/en/matches/profis"
 TV_BASE = "https://tv-program.sk"
 TZ = ZoneInfo("Europe/Bratislava")
@@ -80,18 +85,25 @@ def normal(value):
 
 
 def fetch_fixtures():
-    events = []
-    for page in range(5):
-        payload = json.loads(get_text(FIXTURES_URL.format(page=page), "application/json"))
-        batch = payload.get("events")
-        if not isinstance(batch, list):
-            raise RuntimeError("Zdroj nevrátil zoznam zápasov Bayernu.")
-        events.extend(batch)
-        if not payload.get("hasNextPage"):
-            break
+    events = {}
+    now = dt.datetime.now(UTC)
+    for league, competition_name in ESPN_LEAGUES.items():
+        for year in sorted({now.year, now.year + 1}):
+            url = FIXTURES_URL.format(league=league, year=year)
+            payload = json.loads(get_text(url, "application/json"))
+            batch = payload.get("events")
+            if not isinstance(batch, list):
+                raise RuntimeError("Zdroj nevrátil zoznam zápasov Bayernu.")
+            for event in batch:
+                contest = (event.get("competitions") or [{}])[0]
+                team_ids = {str(item.get("team", {}).get("id", "")) for item in contest.get("competitors", [])}
+                if TEAM_ID not in team_ids:
+                    continue
+                event["_competition_name"] = competition_name
+                events[str(event["id"])] = event
     if len(events) < 10:
         raise RuntimeError("Zdroj nevrátil úplný zoznam zápasov Bayernu.")
-    return events
+    return list(events.values())
 
 
 def parse_tv_page(slug, channel):
@@ -128,9 +140,9 @@ def fetch_tv_program():
     return broadcasts
 
 
-def channels_for(event, start, broadcasts):
-    home = normal(event.get("homeTeam", {}).get("name", ""))
-    away = normal(event.get("awayTeam", {}).get("name", ""))
+def channels_for(home_name, away_name, start, broadcasts):
+    home = normal(home_name)
+    away = normal(away_name)
     opponent = away if "bayern" in home else home
     opponent_words = [w for w in opponent.split() if len(w) >= 5 and w not in {"munchen", "muenchen", "football"}]
     found = set()
@@ -146,22 +158,25 @@ def channels_for(event, start, broadcasts):
 
 
 def match_url(event):
-    return f"https://www.sofascore.com/{event.get('slug', 'football-match')}/{event.get('customId', '')}#id:{event['id']}"
+    for link in event.get("links", []):
+        if link.get("href"):
+            return link["href"]
+    return OFFICIAL_URL
 
 
 def build_event(event, broadcasts, generated_at):
-    start = dt.datetime.fromtimestamp(event["startTimestamp"], UTC)
-    home = html.unescape(event["homeTeam"]["name"])
-    away = html.unescape(event["awayTeam"]["name"])
-    competition = html.unescape(event.get("tournament", {}).get("name", "Futbal"))
+    contest = (event.get("competitions") or [{}])[0]
+    start = dt.datetime.fromisoformat(event["date"].replace("Z", "+00:00"))
+    competitors = {item.get("homeAway"): item.get("team", {}) for item in contest.get("competitors", [])}
+    home = html.unescape(competitors.get("home", {}).get("displayName", "Domáci"))
+    away = html.unescape(competitors.get("away", {}).get("displayName", "Hostia"))
+    competition = html.unescape(event.get("_competition_name", "Futbal"))
     title = f"⚽ {home} – {away} ({competition})"
     event_uid = f"bayern-men-{event['id']}-v1@ruzindol-kalendar"
-    channels = channels_for(event, start, broadcasts)
+    channels = channels_for(home, away, start, broadcasts)
     tv = ", ".join(channels) if channels else "zatiaľ nepotvrdený – doplní sa automaticky"
     url = match_url(event)
-    local_start = start.astimezone(TZ)
-    # Several distant Bundesliga fixtures initially use a provisional 11:00 local slot.
-    provisional = competition == "Bundesliga" and local_start.hour == 11 and (start - generated_at).days > 35
+    provisional = not bool(contest.get("timeValid", True))
     time_note = " Termín je zatiaľ orientačný a po potvrdení sa automaticky upraví." if provisional else ""
     description = (
         f"Súťaž: {competition}\n"
@@ -179,6 +194,7 @@ def build_event(event, broadcasts, generated_at):
         "SUMMARY:" + escape(title),
         "DESCRIPTION:" + escape(description),
         "URL:" + url,
+        "LOCATION:" + escape(contest.get("venue", {}).get("fullName", "")),
         "TRANSP:OPAQUE",
         "STATUS:CONFIRMED",
     ]
@@ -203,7 +219,9 @@ def main():
     events = []
     tv_confirmed = provisional_count = 0
     for fixture in fixtures:
-        if fixture.get("status", {}).get("type") != "notstarted":
+        contest = (fixture.get("competitions") or [{}])[0]
+        state = contest.get("status", {}).get("type", {}).get("state")
+        if state == "post":
             continue
         item = build_event(fixture, broadcasts, generated_at)
         start, lines, has_tv, provisional = item
@@ -238,7 +256,7 @@ def main():
         "matches_with_confirmed_tv_channel": tv_confirmed,
         "provisional_kickoff_times": provisional_count,
         "reminder": "5 minutes before",
-        "fixtures_source": FIXTURES_URL.format(page=0),
+        "fixtures_source": "ESPN scoreboards: " + ", ".join(ESPN_LEAGUES),
         "tv_source": TV_BASE,
         "tv_channels_checked": list(TV_CHANNELS.values()),
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
