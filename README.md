@@ -64,3 +64,17 @@ Odoberaná adresa:
 
 Kontrola poslednej úspešnej aktualizácie:
 `https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/zastupitelstvo-status.json`
+
+## Formula 1
+
+Samostatný kalendár obsahuje tréningy, šprintové kvalifikácie, šprinty,
+kvalifikácie a preteky. Udalosti s potvrdeným časom majú upozornenia 1 hodinu
+a 5 minút pred začiatkom. Rozpis sa kontroluje štyrikrát denne. Pre rok 2027
+sú do zverejnenia presných časov uvedené potvrdené pretekové víkendy; potom sa
+automaticky nahradia jednotlivými jazdami.
+
+Odoberaná adresa:
+`https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/formula1.ics`
+
+Kontrola poslednej úspešnej aktualizácie:
+`https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/formula1-status.json`

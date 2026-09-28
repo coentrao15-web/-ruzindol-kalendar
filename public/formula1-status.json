@@ -1,0 +1,22 @@
+{
+  "updated_utc": "2026-09-28T21:06:32.995687+00:00",
+  "years": [
+    2026,
+    2027
+  ],
+  "races_from_timed_source": {
+    "2026": 23,
+    "2027": 0
+  },
+  "timed_sessions": {
+    "2026": 115,
+    "2027": 0
+  },
+  "2027_weekend_placeholders": 24,
+  "reminders": [
+    "1 hour before",
+    "5 minutes before"
+  ],
+  "timed_source": "https://api.jolpi.ca/ergast/f1/{year}.json",
+  "official_calendar": "https://www.formula1.com/en/racing/{year}"
+}
