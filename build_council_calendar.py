@@ -10,6 +10,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+import uuid
 from html.parser import HTMLParser
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -210,8 +211,14 @@ def event(start, source_url, generated_at):
         "TRANSP:OPAQUE",
     ]
     for trigger in ALERTS:
+        alarm_uid = str(uuid.uuid5(
+            uuid.NAMESPACE_URL,
+            f"https://ruzindol.sk/calendar/council/{key}/{trigger}",
+        )).upper()
         lines += [
             "BEGIN:VALARM",
+            "UID:" + alarm_uid,
+            "X-WR-ALARMUID:" + alarm_uid,
             "ACTION:DISPLAY",
             "TRIGGER;RELATED=START:" + trigger,
             "DESCRIPTION:" + escape(title),
