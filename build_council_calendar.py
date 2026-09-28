@@ -31,7 +31,7 @@ ALERTS = ("-P1D", "-PT1H")
 def get_text(url):
     request = urllib.request.Request(url, headers={
         "Accept": "text/html,application/xhtml+xml",
-        "User-Agent": "Ruzindol-council-calendar/1.0 (public municipal data)",
+        "User-Agent": "Ruzindol-council-calendar/1.1 (public municipal data)",
     })
     last_error = None
     for attempt in range(3):
