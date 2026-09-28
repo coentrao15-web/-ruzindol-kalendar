@@ -44,3 +44,10 @@ ktorý zároveň udržuje repozitár aktívny. Projekt vyžaduje verejný repozi
 a dostupnosť GitHub Actions, verejných súborov GitHubu a Sportnetu.
 
 Zdroj dát: [OŠK Ružindol na Futbalnete](https://sportnet.sme.sk/futbalnet/k/osk-ruzindol/).
+
+## Upozornenia
+
+Každý zápas obsahuje tri upozornenia: 1 deň, 2 hodiny a 15 minút pred
+začiatkom. Platí to aj pre nové zápasy. Pri presunutí zápasu sa upozornenia
+počítajú od nového začiatku. V iPhone musia byť pre tento odoberaný kalendár
+zapnuté hlásenia udalostí a povolené hlásenia aplikácie Kalendár.

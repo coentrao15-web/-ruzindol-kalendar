@@ -116,8 +116,17 @@ def event(match, category, generated_at):
         "DESCRIPTION:" + escape(description),
         "URL:" + url,
         "TRANSP:OPAQUE",
-        "END:VEVENT",
     ]
+    # Relative alerts follow the match if its start time changes.
+    for trigger in ("-P1D", "-PT2H", "-PT15M"):
+        lines += [
+            "BEGIN:VALARM",
+            "ACTION:DISPLAY",
+            "TRIGGER;RELATED=START:" + trigger,
+            "DESCRIPTION:" + escape(title),
+            "END:VALARM",
+        ]
+    lines.append("END:VEVENT")
     return start_utc, lines
 
 
