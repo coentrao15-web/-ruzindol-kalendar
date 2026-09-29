@@ -1,11 +1,12 @@
 {
-  "updated_utc": "2026-09-29T01:21:01.390184+00:00",
+  "updated_utc": "2026-09-29T04:56:36.000294+00:00",
   "future_matches": 38,
   "matches_with_confirmed_tv_channel": 0,
   "provisional_kickoff_times": 22,
   "reminder": "5 minutes before",
   "fixtures_source": "ESPN scoreboards: ger.1, uefa.champions, ger.dfb_pokal",
   "tv_source": "https://tv-program.sk",
+  "oneplay_source": "https://www.oneplaysport.cz/program?date=YYYY-MM-DD",
   "tv_channels_checked": [
     "Nova Sport 1",
     "Nova Sport 2",
@@ -24,5 +25,18 @@
     "JOJ Šport 2",
     "STVR Šport",
     "CANAL+ Sport"
-  ]
+  ],
+  "czech_streaming_checked": [
+    "Oneplay Sport 1",
+    "Oneplay Sport 2",
+    "Oneplay Sport 3",
+    "Oneplay Sport 4",
+    "Nova Sport 1",
+    "Nova Sport 2",
+    "Nova Sport 3",
+    "Nova Sport 4",
+    "Nova Sport 5",
+    "Nova Sport 6"
+  ],
+  "slovak_streaming_note": "Nova Sport 1-6 are available through Voyo Maximum in Slovakia"
 }

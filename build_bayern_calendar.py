@@ -6,6 +6,7 @@ import datetime as dt
 import html
 import json
 import re
+import subprocess
 import sys
 import unicodedata
 import urllib.request
@@ -23,6 +24,7 @@ ESPN_LEAGUES = {
 FIXTURES_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/scoreboard?dates={year}&limit=1000"
 OFFICIAL_URL = "https://fcbayern.com/en/matches/profis"
 TV_BASE = "https://tv-program.sk"
+ONEPLAY_PROGRAM = "https://www.oneplaysport.cz/program?date={date}"
 TZ = ZoneInfo("Europe/Bratislava")
 UTC = dt.timezone.utc
 
@@ -140,6 +142,63 @@ def fetch_tv_program():
     return broadcasts
 
 
+def get_oneplay_page(day):
+    """Oneplay rejects urllib in some environments, while its public HTML works with curl."""
+    url = ONEPLAY_PROGRAM.format(date=day.isoformat())
+    result = subprocess.run([
+        "curl", "-fsSL", "--compressed", "--max-time", "35",
+        "-A", "Mozilla/5.0 (compatible; Bayern-calendar/1.0; public calendar feed)",
+        "-H", "Accept: text/html,application/xhtml+xml", url,
+    ], capture_output=True, text=True, timeout=40, check=False)
+    if result.returncode:
+        print(f"Oneplay program {day} nie je dostupný: {result.stderr.strip()}", file=sys.stderr)
+        return ""
+    return result.stdout
+
+
+def parse_oneplay_day(day):
+    page = get_oneplay_page(day)
+    broadcasts = []
+    for block in re.split(r'<div class="channel">', page, flags=re.I)[1:]:
+        channel_match = re.search(r'<div class="mobile-channel">.*?alt="([^"]+)"', block, re.I | re.S)
+        if not channel_match:
+            continue
+        channel = html.unescape(channel_match.group(1)).strip()
+        if not (channel.startswith("Oneplay Sport ") or channel.startswith("Nova Sport ")):
+            continue
+        for start_text, name in re.findall(
+            r'<a[^>]*data-start="(\d{2}:\d{2})"[^>]*class="program-item"[^>]*>.*?'
+            r'<span class="name">(.*?)</span>', block, re.I | re.S
+        ):
+            try:
+                hour, minute = map(int, start_text.split(":"))
+                start = dt.datetime.combine(day, dt.time(hour % 24, minute), TZ).astimezone(UTC)
+            except ValueError:
+                continue
+            broadcasts.append({
+                "channel": channel,
+                "start": start,
+                "text": re.sub(r"<[^>]+>", " ", html.unescape(name)),
+            })
+    return broadcasts
+
+
+def fetch_oneplay_program(fixtures, now):
+    days = set()
+    for event in fixtures:
+        try:
+            start = dt.datetime.fromisoformat(event["date"].replace("Z", "+00:00"))
+        except (KeyError, ValueError):
+            continue
+        if now <= start <= now + dt.timedelta(days=21):
+            days.add(start.astimezone(TZ).date())
+    broadcasts = []
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
+        for batch in pool.map(parse_oneplay_day, sorted(days)):
+            broadcasts.extend(batch)
+    return broadcasts
+
+
 def channels_for(home_name, away_name, start, broadcasts):
     home = normal(home_name)
     away = normal(away_name)
@@ -154,7 +213,10 @@ def channels_for(home_name, away_name, start, broadcasts):
         mentions_opponent = any(word in text for word in opponent_words)
         if mentions_bayern or mentions_opponent:
             found.add(broadcast["channel"])
-    return sorted(found)
+    channels = sorted(found)
+    if any(channel.startswith("Nova Sport ") for channel in channels):
+        channels += ["Oneplay (CZ)", "Voyo Maximum (SK)"]
+    return channels
 
 
 def match_url(event):
@@ -216,6 +278,7 @@ def main():
     generated_at = dt.datetime.now(UTC)
     fixtures = fetch_fixtures()
     broadcasts = fetch_tv_program()
+    broadcasts.extend(fetch_oneplay_program(fixtures, generated_at))
     events = []
     tv_confirmed = provisional_count = 0
     for fixture in fixtures:
@@ -258,7 +321,13 @@ def main():
         "reminder": "5 minutes before",
         "fixtures_source": "ESPN scoreboards: " + ", ".join(ESPN_LEAGUES),
         "tv_source": TV_BASE,
+        "oneplay_source": ONEPLAY_PROGRAM.format(date="YYYY-MM-DD"),
         "tv_channels_checked": list(TV_CHANNELS.values()),
+        "czech_streaming_checked": [
+            "Oneplay Sport 1", "Oneplay Sport 2", "Oneplay Sport 3", "Oneplay Sport 4",
+            "Nova Sport 1", "Nova Sport 2", "Nova Sport 3", "Nova Sport 4", "Nova Sport 5", "Nova Sport 6",
+        ],
+        "slovak_streaming_note": "Nova Sport 1-6 are available through Voyo Maximum in Slovakia",
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Vygenerované: {len(events)} zápasov; TV potvrdená pri {tv_confirmed}; orientačný čas pri {provisional_count}.")
 
