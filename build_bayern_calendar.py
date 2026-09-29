@@ -233,10 +233,12 @@ def build_event(event, broadcasts, generated_at):
     home = html.unescape(competitors.get("home", {}).get("displayName", "Domáci"))
     away = html.unescape(competitors.get("away", {}).get("displayName", "Hostia"))
     competition = html.unescape(event.get("_competition_name", "Futbal"))
-    title = f"⚽ {home} – {away} ({competition})"
+    base_title = f"⚽ {home} – {away}"
     event_uid = f"bayern-men-{event['id']}-v1@ruzindol-kalendar"
     channels = channels_for(home, away, start, broadcasts)
     tv = ", ".join(channels) if channels else "zatiaľ nepotvrdený – doplní sa automaticky"
+    tv_title = ", ".join(channels) if channels else "TV zatiaľ nepotvrdená"
+    title = f"{base_title} | 📺 {tv_title}"
     url = match_url(event)
     provisional = not bool(contest.get("timeValid", True))
     time_note = " Termín je zatiaľ orientačný a po potvrdení sa automaticky upraví." if provisional else ""
@@ -250,7 +252,7 @@ def build_event(event, broadcasts, generated_at):
         "BEGIN:VEVENT",
         "UID:" + event_uid,
         "DTSTAMP:" + generated_at.strftime("%Y%m%dT%H%M%SZ"),
-        "SEQUENCE:1",
+        "SEQUENCE:" + str(int(generated_at.timestamp())),
         "DTSTART:" + start.strftime("%Y%m%dT%H%M%SZ"),
         "DTEND:" + (start + dt.timedelta(hours=2)).strftime("%Y%m%dT%H%M%SZ"),
         "SUMMARY:" + escape(title),
@@ -260,17 +262,9 @@ def build_event(event, broadcasts, generated_at):
         "TRANSP:OPAQUE",
         "STATUS:CONFIRMED",
     ]
-    alarm_uid = stable_uuid(event_uid + ":-PT5M")
-    lines += [
-        "BEGIN:VALARM",
-        "UID:" + alarm_uid,
-        "X-WR-ALARMUID:" + alarm_uid,
-        "ACTION:DISPLAY",
-        "TRIGGER;RELATED=START:-PT5M",
-        "DESCRIPTION:" + escape(title),
-        "END:VALARM",
-        "END:VEVENT",
-    ]
+    # iPhone applies the subscribed calendar's default five-minute alert.
+    # Do not add another VALARM here, otherwise iOS displays two identical alerts.
+    lines.append("END:VEVENT")
     return start, lines, bool(channels), provisional
 
 

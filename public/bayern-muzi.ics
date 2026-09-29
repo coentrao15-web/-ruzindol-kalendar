@@ -9,11 +9,11 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:bayern-men-401884777-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261010T133000Z
 DTEND:20261010T153000Z
-SUMMARY:⚽ FC Augsburg – Bayern Munich (Bundesliga)
+SUMMARY:⚽ FC Augsburg – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884777/bayern-muni
@@ -23,21 +23,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884777/bayern-munich-fc-a
 LOCATION:WWK Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:4AD73898-BF8C-50AD-9780-E7731F9E1A76
-X-WR-ALARMUID:4AD73898-BF8C-50AD-9780-E7731F9E1A76
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ FC Augsburg – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915411-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261013T190000Z
 DTEND:20261013T210000Z
-SUMMARY:⚽ Viking FK – Bayern Munich (UEFA Champions League)
+SUMMARY:⚽ Viking FK – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
  nAktuálny termín: https://www.espn.com/soccer/match/_/gameId/401915411/b
@@ -47,21 +40,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401915411/bayern-munich-viki
 LOCATION:Viking Stadion
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:A162A818-D734-52C7-8971-559DA1BCD264
-X-WR-ALARMUID:A162A818-D734-52C7-8971-559DA1BCD264
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Viking FK – Bayern Munich (UEFA Champions League)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884772-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261017T163000Z
 DTEND:20261017T183000Z
-SUMMARY:⚽ Bayern Munich – RB Leipzig (Bundesliga)
+SUMMARY:⚽ Bayern Munich – RB Leipzig | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884772/rb-leipzig-
@@ -71,21 +57,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884772/rb-leipzig-bayern-
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:8D3B24DE-5D79-502A-9D78-6F213F6DB03B
-X-WR-ALARMUID:8D3B24DE-5D79-502A-9D78-6F213F6DB03B
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – RB Leipzig (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915312-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261021T190000Z
 DTEND:20261021T210000Z
-SUMMARY:⚽ Bayern Munich – Arsenal (UEFA Champions League)
+SUMMARY:⚽ Bayern Munich – Arsenal | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
  nAktuálny termín: https://www.espn.com/soccer/match/_/gameId/401915312/a
@@ -95,21 +74,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401915312/arsenal-bayern-mun
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:A1E50222-E55E-574A-BF64-656DE4FF460D
-X-WR-ALARMUID:A1E50222-E55E-574A-BF64-656DE4FF460D
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Arsenal (UEFA Champions League)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884759-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261025T163000Z
 DTEND:20261025T183000Z
-SUMMARY:⚽ SC Freiburg – Bayern Munich (Bundesliga)
+SUMMARY:⚽ SC Freiburg – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884759/bayern-muni
@@ -119,21 +91,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884759/bayern-munich-sc-f
 LOCATION:Europa-Park Stadion
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:6F8AEA33-44C1-5D46-A22F-AA6EDC37D5DA
-X-WR-ALARMUID:6F8AEA33-44C1-5D46-A22F-AA6EDC37D5DA
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ SC Freiburg – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401917035-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261028T194500Z
 DTEND:20261028T214500Z
-SUMMARY:⚽ Bayern Munich – 1. FC Magdeburg (DFB-Pokal)
+SUMMARY:⚽ Bayern Munich – 1. FC Magdeburg | 📺 TV zatiaľ nepotvrden
+ á
 DESCRIPTION:Súťaž: DFB-Pokal\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401917035/1-fc-magdeb
@@ -143,21 +109,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401917035/1-fc-magdeburg-bay
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:364E8F39-7772-55D5-A733-7F475B115D8B
-X-WR-ALARMUID:364E8F39-7772-55D5-A733-7F475B115D8B
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – 1. FC Magdeburg (DFB-Pokal)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884754-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261031T173000Z
 DTEND:20261031T193000Z
-SUMMARY:⚽ Bayern Munich – Borussia Dortmund (Bundesliga)
+SUMMARY:⚽ Bayern Munich – Borussia Dortmund | 📺 TV zatiaľ nepotvrde
+ ná
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884754/borussia-do
@@ -167,21 +127,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884754/borussia-dortmund-
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:480719B7-359F-51FF-BB31-DAA9CA065B0F
-X-WR-ALARMUID:480719B7-359F-51FF-BB31-DAA9CA065B0F
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Borussia Dortmund (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915386-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261103T200000Z
 DTEND:20261103T220000Z
-SUMMARY:⚽ Atlético Madrid – Bayern Munich (UEFA Champions League)
+SUMMARY:⚽ Atlético Madrid – Bayern Munich | 📺 TV zatiaľ nepotvrden
+ á
 DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
  nAktuálny termín: https://www.espn.com/soccer/match/_/gameId/401915386/b
@@ -191,21 +145,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401915386/bayern-munich-atle
 LOCATION:Riyadh Air Metropolitano
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:50F32394-225B-5212-AC71-F2935D9FBC73
-X-WR-ALARMUID:50F32394-225B-5212-AC71-F2935D9FBC73
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Atlético Madrid – Bayern Munich (UEFA Champions League)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884740-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261107T143000Z
 DTEND:20261107T163000Z
-SUMMARY:⚽ Mainz – Bayern Munich (Bundesliga)
+SUMMARY:⚽ Mainz – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884740/bayern-muni
@@ -215,21 +162,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884740/bayern-munich-main
 LOCATION:MEWA ARENA
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:EFFBBCB0-CC41-55AA-AAC2-5660786F5095
-X-WR-ALARMUID:EFFBBCB0-CC41-55AA-AAC2-5660786F5095
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Mainz – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884736-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261120T193000Z
 DTEND:20261120T213000Z
-SUMMARY:⚽ Bayern Munich – FC Cologne (Bundesliga)
+SUMMARY:⚽ Bayern Munich – FC Cologne | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884736/fc-cologne-
@@ -239,21 +179,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884736/fc-cologne-bayern-
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:9C32984D-CBC2-5C5B-A688-3CAF12307A64
-X-WR-ALARMUID:9C32984D-CBC2-5C5B-A688-3CAF12307A64
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – FC Cologne (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915377-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261125T200000Z
 DTEND:20261125T220000Z
-SUMMARY:⚽ Lille – Bayern Munich (UEFA Champions League)
+SUMMARY:⚽ Lille – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
  nAktuálny termín: https://www.espn.com/soccer/match/_/gameId/401915377/b
@@ -263,21 +196,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401915377/bayern-munich-lill
 LOCATION:Decathlon Arena - Stade Pierre-Mauroy
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:19CFF8F6-6A54-5101-88BF-F22B1C0041B4
-X-WR-ALARMUID:19CFF8F6-6A54-5101-88BF-F22B1C0041B4
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Lille – Bayern Munich (UEFA Champions League)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884722-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261128T143000Z
 DTEND:20261128T163000Z
-SUMMARY:⚽ Hamburg SV – Bayern Munich (Bundesliga)
+SUMMARY:⚽ Hamburg SV – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884722/bayern-muni
@@ -287,21 +213,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884722/bayern-munich-hamb
 LOCATION:Volksparkstadion
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:808E3AAE-9C1F-5059-BC51-DF66C3151E66
-X-WR-ALARMUID:808E3AAE-9C1F-5059-BC51-DF66C3151E66
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Hamburg SV – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884718-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261205T200000Z
 DTEND:20261205T220000Z
-SUMMARY:⚽ Bayern Munich – SC Paderborn 07 (Bundesliga)
+SUMMARY:⚽ Bayern Munich – SC Paderborn 07 | 📺 TV zatiaľ nepotvrden
+ á
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884718/sc-paderbor
@@ -312,21 +232,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884718/sc-paderborn-07-ba
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:6A559284-677C-5439-AEDC-F52CB4CA9B96
-X-WR-ALARMUID:6A559284-677C-5439-AEDC-F52CB4CA9B96
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – SC Paderborn 07 (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915284-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261208T200000Z
 DTEND:20261208T220000Z
-SUMMARY:⚽ Bayern Munich – Slavia Prague (UEFA Champions League)
+SUMMARY:⚽ Bayern Munich – Slavia Prague | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
  nAktuálny termín: https://www.espn.com/soccer/match/_/gameId/401915284/s
@@ -336,21 +249,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401915284/slavia-prague-baye
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:941406D1-5BB3-5FE1-B081-E1E6D0D314D6
-X-WR-ALARMUID:941406D1-5BB3-5FE1-B081-E1E6D0D314D6
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Slavia Prague (UEFA Champions League)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884707-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261212T200000Z
 DTEND:20261212T220000Z
-SUMMARY:⚽ TSG Hoffenheim – Bayern Munich (Bundesliga)
+SUMMARY:⚽ TSG Hoffenheim – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884707/bayern-muni
@@ -361,21 +267,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884707/bayern-munich-tsg-
 LOCATION:PreZero Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:BEF6A31F-106A-5C0A-A442-80A963407B8E
-X-WR-ALARMUID:BEF6A31F-106A-5C0A-A442-80A963407B8E
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ TSG Hoffenheim – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884700-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20261219T200000Z
 DTEND:20261219T220000Z
-SUMMARY:⚽ Bayern Munich – Werder Bremen (Bundesliga)
+SUMMARY:⚽ Bayern Munich – Werder Bremen | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884700/werder-brem
@@ -386,21 +285,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884700/werder-bremen-baye
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:6D9E085C-81E7-526F-9C29-D12F550B66A9
-X-WR-ALARMUID:6D9E085C-81E7-526F-9C29-D12F550B66A9
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Werder Bremen (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884687-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270109T200000Z
 DTEND:20270109T220000Z
-SUMMARY:⚽ Borussia Mönchengladbach – Bayern Munich (Bundesliga)
+SUMMARY:⚽ Borussia Mönchengladbach – Bayern Munich | 📺 TV zatiaľ n
+ epotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884687/bayern-muni
@@ -411,21 +304,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884687/bayern-munich-boru
 LOCATION:BORUSSIA-PARK
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:A0ABBE67-88AA-50A2-89F4-25AFA5C905C8
-X-WR-ALARMUID:A0ABBE67-88AA-50A2-89F4-25AFA5C905C8
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Borussia Mönchengladbach – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884682-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270113T200000Z
 DTEND:20270113T220000Z
-SUMMARY:⚽ Bayern Munich – Bayer Leverkusen (Bundesliga)
+SUMMARY:⚽ Bayern Munich – Bayer Leverkusen | 📺 TV zatiaľ nepotvrden
+ á
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884682/bayer-lever
@@ -436,21 +323,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884682/bayer-leverkusen-b
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:347D1AA0-3250-5AAD-9953-1457D7525EE9
-X-WR-ALARMUID:347D1AA0-3250-5AAD-9953-1457D7525EE9
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Bayer Leverkusen (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884669-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270116T200000Z
 DTEND:20270116T220000Z
-SUMMARY:⚽ Eintracht Frankfurt – Bayern Munich (Bundesliga)
+SUMMARY:⚽ Eintracht Frankfurt – Bayern Munich | 📺 TV zatiaľ nepotvr
+ dená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884669/bayern-muni
@@ -461,21 +342,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884669/bayern-munich-eint
 LOCATION:Deutsche Bank Park
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:6FA19EA4-2B5D-559A-BC57-1B2C9802F837
-X-WR-ALARMUID:6FA19EA4-2B5D-559A-BC57-1B2C9802F837
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Eintracht Frankfurt – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915357-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270120T200000Z
 DTEND:20270120T220000Z
-SUMMARY:⚽ Manchester United – Bayern Munich (UEFA Champions League)
+SUMMARY:⚽ Manchester United – Bayern Munich | 📺 TV zatiaľ nepotvrde
+ ná
 DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
  nAktuálny termín: https://www.espn.com/soccer/match/_/gameId/401915357/b
@@ -485,21 +360,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401915357/bayern-munich-manc
 LOCATION:Old Trafford
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:67816DFC-D5E9-5DFD-8AF8-8CA731D5220D
-X-WR-ALARMUID:67816DFC-D5E9-5DFD-8AF8-8CA731D5220D
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Manchester United – Bayern Munich (UEFA Champions League)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884664-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270123T200000Z
 DTEND:20270123T220000Z
-SUMMARY:⚽ VfB Stuttgart – Bayern Munich (Bundesliga)
+SUMMARY:⚽ VfB Stuttgart – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884664/bayern-muni
@@ -510,21 +378,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884664/bayern-munich-vfb-
 LOCATION:MHPArena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:0ECEE955-D9B3-5E72-8107-B2A42468BD7E
-X-WR-ALARMUID:0ECEE955-D9B3-5E72-8107-B2A42468BD7E
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ VfB Stuttgart – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915348-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270127T200000Z
 DTEND:20270127T220000Z
-SUMMARY:⚽ Bayern Munich – Real Betis (UEFA Champions League)
+SUMMARY:⚽ Bayern Munich – Real Betis | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  otvrdený – doplní sa automaticky.\nTV program: https://tv-program.sk/\
  nAktuálny termín: https://www.espn.com/soccer/match/_/gameId/401915348/r
@@ -534,21 +395,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401915348/real-betis-bayern-
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:DFC061BF-7E6A-5EE7-A8CB-41B99BB3D747
-X-WR-ALARMUID:DFC061BF-7E6A-5EE7-A8CB-41B99BB3D747
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Real Betis (UEFA Champions League)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884655-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270130T200000Z
 DTEND:20270130T220000Z
-SUMMARY:⚽ Bayern Munich – Schalke 04 (Bundesliga)
+SUMMARY:⚽ Bayern Munich – Schalke 04 | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884655/schalke-04-
@@ -559,21 +413,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884655/schalke-04-bayern-
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:8ECCB57A-78F7-50CB-89DA-3B4D09C3CEE6
-X-WR-ALARMUID:8ECCB57A-78F7-50CB-89DA-3B4D09C3CEE6
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Schalke 04 (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884646-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270206T200000Z
 DTEND:20270206T220000Z
-SUMMARY:⚽ Bayern Munich – SV Elversberg (Bundesliga)
+SUMMARY:⚽ Bayern Munich – SV Elversberg | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884646/sv-elversbe
@@ -584,21 +431,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884646/sv-elversberg-baye
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:D2BAF63A-7807-5945-8B36-5BB33BC7B944
-X-WR-ALARMUID:D2BAF63A-7807-5945-8B36-5BB33BC7B944
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – SV Elversberg (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884631-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270213T200000Z
 DTEND:20270213T220000Z
-SUMMARY:⚽ 1. FC Union Berlin – Bayern Munich (Bundesliga)
+SUMMARY:⚽ 1. FC Union Berlin – Bayern Munich | 📺 TV zatiaľ nepotvrd
+ ená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884631/bayern-muni
@@ -609,21 +450,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884631/bayern-munich-1-fc
 LOCATION:Stadion An der Alten Försterei
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:0C7F3C13-FC46-5708-933C-8618C304E362
-X-WR-ALARMUID:0C7F3C13-FC46-5708-933C-8618C304E362
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ 1. FC Union Berlin – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884628-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270220T200000Z
 DTEND:20270220T220000Z
-SUMMARY:⚽ Bayern Munich – FC Augsburg (Bundesliga)
+SUMMARY:⚽ Bayern Munich – FC Augsburg | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884628/fc-augsburg
@@ -634,21 +468,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884628/fc-augsburg-bayern
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:774B2BD9-F871-5489-A3AA-7BC3C9120D39
-X-WR-ALARMUID:774B2BD9-F871-5489-A3AA-7BC3C9120D39
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – FC Augsburg (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884618-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270227T200000Z
 DTEND:20270227T220000Z
-SUMMARY:⚽ RB Leipzig – Bayern Munich (Bundesliga)
+SUMMARY:⚽ RB Leipzig – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884618/bayern-muni
@@ -659,21 +486,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884618/bayern-munich-rb-l
 LOCATION:Red Bull Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:E73D4123-5B82-57D8-89A2-524AC052DFF3
-X-WR-ALARMUID:E73D4123-5B82-57D8-89A2-524AC052DFF3
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ RB Leipzig – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884610-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270303T200000Z
 DTEND:20270303T220000Z
-SUMMARY:⚽ Bayern Munich – SC Freiburg (Bundesliga)
+SUMMARY:⚽ Bayern Munich – SC Freiburg | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884610/sc-freiburg
@@ -684,21 +504,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884610/sc-freiburg-bayern
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:75604DE4-9CCD-5B8E-8283-FB8DF662A49A
-X-WR-ALARMUID:75604DE4-9CCD-5B8E-8283-FB8DF662A49A
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – SC Freiburg (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884601-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270306T200000Z
 DTEND:20270306T220000Z
-SUMMARY:⚽ Borussia Dortmund – Bayern Munich (Bundesliga)
+SUMMARY:⚽ Borussia Dortmund – Bayern Munich | 📺 TV zatiaľ nepotvrde
+ ná
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884601/bayern-muni
@@ -709,21 +523,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884601/bayern-munich-boru
 LOCATION:Signal Iduna Park
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:9A5CB987-B3CA-54C9-AE0A-693894C3B0B5
-X-WR-ALARMUID:9A5CB987-B3CA-54C9-AE0A-693894C3B0B5
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Borussia Dortmund – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884592-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270313T200000Z
 DTEND:20270313T220000Z
-SUMMARY:⚽ Bayern Munich – Mainz (Bundesliga)
+SUMMARY:⚽ Bayern Munich – Mainz | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884592/mainz-bayer
@@ -734,21 +541,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884592/mainz-bayern-munic
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:0616BBA3-E340-5E4B-BC20-DC24A269214B
-X-WR-ALARMUID:0616BBA3-E340-5E4B-BC20-DC24A269214B
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Mainz (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884576-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270320T180000Z
 DTEND:20270320T200000Z
-SUMMARY:⚽ FC Cologne – Bayern Munich (Bundesliga)
+SUMMARY:⚽ FC Cologne – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884576/bayern-muni
@@ -759,21 +559,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884576/bayern-munich-fc-c
 LOCATION:RheinEnergieStadion
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:CB05014E-2D87-509A-B77A-1407F9BE48FD
-X-WR-ALARMUID:CB05014E-2D87-509A-B77A-1407F9BE48FD
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ FC Cologne – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884574-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270403T180000Z
 DTEND:20270403T200000Z
-SUMMARY:⚽ Bayern Munich – Hamburg SV (Bundesliga)
+SUMMARY:⚽ Bayern Munich – Hamburg SV | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884574/hamburg-sv-
@@ -784,21 +577,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884574/hamburg-sv-bayern-
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:2F638785-FE77-54EE-8813-39EACA72BA79
-X-WR-ALARMUID:2F638785-FE77-54EE-8813-39EACA72BA79
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Hamburg SV (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884557-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270410T180000Z
 DTEND:20270410T200000Z
-SUMMARY:⚽ SC Paderborn 07 – Bayern Munich (Bundesliga)
+SUMMARY:⚽ SC Paderborn 07 – Bayern Munich | 📺 TV zatiaľ nepotvrden
+ á
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884557/bayern-muni
@@ -809,21 +596,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884557/bayern-munich-sc-p
 LOCATION:Home Deluxe Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:520AD17A-EBB2-522F-A411-556244B4A7C0
-X-WR-ALARMUID:520AD17A-EBB2-522F-A411-556244B4A7C0
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ SC Paderborn 07 – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884556-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270417T180000Z
 DTEND:20270417T200000Z
-SUMMARY:⚽ Bayern Munich – TSG Hoffenheim (Bundesliga)
+SUMMARY:⚽ Bayern Munich – TSG Hoffenheim | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884556/tsg-hoffenh
@@ -834,21 +614,14 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884556/tsg-hoffenheim-bay
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:90E0822D-3B65-5FF8-B55D-F20DD3AA6052
-X-WR-ALARMUID:90E0822D-3B65-5FF8-B55D-F20DD3AA6052
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – TSG Hoffenheim (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884540-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270424T180000Z
 DTEND:20270424T200000Z
-SUMMARY:⚽ Werder Bremen – Bayern Munich (Bundesliga)
+SUMMARY:⚽ Werder Bremen – Bayern Munich | 📺 TV zatiaľ nepotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884540/bayern-muni
@@ -859,21 +632,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884540/bayern-munich-werd
 LOCATION:Weserstadion
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:125EA218-513A-58B1-8D9C-02BC041C7BC6
-X-WR-ALARMUID:125EA218-513A-58B1-8D9C-02BC041C7BC6
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Werder Bremen – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884538-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270508T180000Z
 DTEND:20270508T200000Z
-SUMMARY:⚽ Bayern Munich – Borussia Mönchengladbach (Bundesliga)
+SUMMARY:⚽ Bayern Munich – Borussia Mönchengladbach | 📺 TV zatiaľ n
+ epotvrdená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884538/borussia-mo
@@ -884,21 +651,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884538/borussia-monchengl
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:37DFAA31-08FA-573F-A346-71FD3DB3929F
-X-WR-ALARMUID:37DFAA31-08FA-573F-A346-71FD3DB3929F
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Borussia Mönchengladbach (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884526-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270515T180000Z
 DTEND:20270515T200000Z
-SUMMARY:⚽ Bayer Leverkusen – Bayern Munich (Bundesliga)
+SUMMARY:⚽ Bayer Leverkusen – Bayern Munich | 📺 TV zatiaľ nepotvrden
+ á
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884526/bayern-muni
@@ -909,21 +670,15 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884526/bayern-munich-baye
 LOCATION:BayArena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:F40B3BC0-4424-5B3A-B1F2-D15C8D697CC1
-X-WR-ALARMUID:F40B3BC0-4424-5B3A-B1F2-D15C8D697CC1
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayer Leverkusen – Bayern Munich (Bundesliga)
-END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884500-v1@ruzindol-kalendar
-DTSTAMP:20260929T051003Z
-SEQUENCE:1
+DTSTAMP:20260929T055139Z
+SEQUENCE:1790661099
 DTSTART:20270522T133000Z
 DTEND:20270522T153000Z
-SUMMARY:⚽ Bayern Munich – Eintracht Frankfurt (Bundesliga)
+SUMMARY:⚽ Bayern Munich – Eintracht Frankfurt | 📺 TV zatiaľ nepotvr
+ dená
 DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený 
  – doplní sa automaticky.\nTV program: https://tv-program.sk/\nAktuálny
   termín: https://www.espn.com/soccer/match/_/gameId/401884500/eintracht-f
@@ -933,12 +688,5 @@ URL:https://www.espn.com/soccer/match/_/gameId/401884500/eintracht-frankfur
 LOCATION:Allianz Arena
 TRANSP:OPAQUE
 STATUS:CONFIRMED
-BEGIN:VALARM
-UID:4F417588-C48E-5A10-9782-966E15AF0F14
-X-WR-ALARMUID:4F417588-C48E-5A10-9782-966E15AF0F14
-ACTION:DISPLAY
-TRIGGER;RELATED=START:-PT5M
-DESCRIPTION:⚽ Bayern Munich – Eintracht Frankfurt (Bundesliga)
-END:VALARM
 END:VEVENT
 END:VCALENDAR
