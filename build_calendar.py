@@ -50,13 +50,13 @@ def discover_teams():
     return teams
 
 
-def fetch_matches(team_id, from_date):
+def fetch_matches(team_id, from_date, closed):
     offset = 0
     output = []
     while True:
         params = {
             "playerAppSpace": CLUB_APP_SPACE, "teamId": team_id,
-            "withDate": "true", "closed": "false", "sorter": "dateFromAsc",
+            "withDate": "true", "closed": str(bool(closed)).lower(), "sorter": "dateFromAsc",
             "dateFrom": from_date, "offset": offset, "limit": 100,
         }
         url = API + "?" + urllib.parse.urlencode(params)
@@ -90,6 +90,40 @@ def folded(line):
     return "\r\n".join(parts)
 
 
+def score_pair(match):
+    """Return (home, away) when Sportnet already publishes a result."""
+    home = match.get("homeTeam") or {}
+    away = match.get("awayTeam") or {}
+
+    def value(obj, *keys):
+        current = obj
+        for key in keys:
+            if not isinstance(current, dict) or key not in current:
+                return None
+            current = current[key]
+        if isinstance(current, bool) or current is None:
+            return None
+        text = str(current).strip()
+        if re.fullmatch(r"\d+", text):
+            return text
+        return None
+
+    candidates = [
+        (value(home, "score"), value(away, "score")),
+        (value(match, "score", "home"), value(match, "score", "away")),
+        (value(match, "score", "homeTeam"), value(match, "score", "awayTeam")),
+        (value(match, "result", "home"), value(match, "result", "away")),
+        (value(match, "result", "homeTeam"), value(match, "result", "awayTeam")),
+        (value(match, "homeScore"), value(match, "awayScore")),
+        (value(match, "scoreHome"), value(match, "scoreAway")),
+        (value(match, "homeTeamScore"), value(match, "awayTeamScore")),
+    ]
+    for home_score, away_score in candidates:
+        if home_score is not None and away_score is not None:
+            return home_score, away_score
+    return None
+
+
 def event(match, category, generated_at):
     home = match.get("homeTeam") or {}
     away = match.get("awayTeam") or {}
@@ -104,7 +138,13 @@ def event(match, category, generated_at):
     app_space = (match.get("appSpace") or "obfz-trnava").lower()
     app_space = re.sub(r"[^a-z0-9-]", "-", app_space)
     url = MATCH_URL.format(app_space, match_id)
-    title = f"⚽ {html.unescape(home['name'])} – {html.unescape(away['name'])} ({category})"
+    home_name = html.unescape(home["name"])
+    away_name = html.unescape(away["name"])
+    score = score_pair(match)
+    if score:
+        title = f"⚽ {home_name} {score[0]}:{score[1]} {away_name} ({category})"
+    else:
+        title = f"⚽ {home_name} – {away_name} ({category})"
     description = f"Predpokladaný koniec zápasu. Aktuálny termín: {url}"
     lines = [
         "BEGIN:VEVENT",
@@ -153,13 +193,15 @@ def event(match, category, generated_at):
 
 def main():
     now = dt.datetime.now(UTC)
-    # Keep recently rescheduled, still-open fixtures visible while Sportnet updates them.
-    from_date = (now - dt.timedelta(days=7)).isoformat(timespec="milliseconds").replace("+00:00", "Z")
+    # Keep recent completed matches so the calendar can show their final result.
+    from_date = (now - dt.timedelta(days=14)).isoformat(timespec="milliseconds").replace("+00:00", "Z")
     teams = discover_teams()
     unique = {}
     counts = {}
     for slug, (team_id, category) in teams.items():
-        matches = fetch_matches(team_id, from_date)
+        matches = fetch_matches(team_id, from_date, False) + fetch_matches(team_id, from_date, True)
+        # The two queries can overlap while Sportnet is closing a just-finished match.
+        matches = list({match["_id"]: match for match in matches if match.get("_id")}.values())
         counts[slug] = len(matches)
         for match in matches:
             item = event(match, category, now)
@@ -179,7 +221,11 @@ def main():
     output.write_bytes(("\r\n".join(folded(line) for line in lines) + "\r\n").encode("utf-8"))
     Path("public/status.json").write_text(json.dumps({
         "updated_utc": now.isoformat(), "teams": counts,
-        "matches": len(unique), "source": CLUB_URL,
+        "matches": len(unique),
+        "matches_with_result": sum(1 for slug, (team_id, category) in teams.items()
+                                   for match in fetch_matches(team_id, from_date, True)
+                                   if score_pair(match)),
+        "source": CLUB_URL,
     }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("Vygenerované:", len(unique), "zápasov,", len(teams), "tímov:", counts)
 
