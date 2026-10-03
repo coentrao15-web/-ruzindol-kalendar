@@ -281,7 +281,7 @@ def build_event(event, broadcasts, generated_at):
         "SUMMARY:" + escape(title),
         "DESCRIPTION:" + escape(description),
         "URL:" + flashscore_url,
-        "LOCATION:" + escape(flashscore_url),
+        "LOCATION:" + escape(f"Flashscore – {home} – {away} | {flashscore_url}"),
         "TRANSP:OPAQUE",
         "STATUS:CONFIRMED",
     ]
