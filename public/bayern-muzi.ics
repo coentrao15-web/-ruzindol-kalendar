@@ -9,8 +9,8 @@ REFRESH-INTERVAL;VALUE=DURATION:PT6H
 X-PUBLISHED-TTL:PT6H
 BEGIN:VEVENT
 UID:bayern-men-401884777-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261010T133000Z
 DTEND:20261010T153000Z
 SUMMARY:⚽ FC Augsburg – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -20,14 +20,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/match/_/gam
  eId/401884777/bayern-munich-fc-augsburg.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – FC Augsburg – Bayern Munich | https://www.flashsc
+ ore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915411-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261013T190000Z
 DTEND:20261013T210000Z
 SUMMARY:⚽ Viking FK – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -37,14 +38,15 @@ DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  /bayern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/mat
  ch/_/gameId/401915411/bayern-munich-viking-fk.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Viking FK – Bayern Munich | https://www.flashscor
+ e.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884772-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261017T163000Z
 DTEND:20261017T183000Z
 SUMMARY:⚽ Bayern Munich – RB Leipzig | 📺 TV zatiaľ nepotvrdená
@@ -54,14 +56,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  Vp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/match/_/game
  Id/401884772/rb-leipzig-bayern-munich.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – RB Leipzig | https://www.flashsco
+ re.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915312-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261021T190000Z
 DTEND:20261021T210000Z
 SUMMARY:⚽ Bayern Munich – Arsenal | 📺 TV zatiaľ nepotvrdená
@@ -71,14 +74,15 @@ DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  ayern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/match
  /_/gameId/401915312/arsenal-bayern-munich.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Arsenal | https://www.flashscore.
+ sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884759-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261025T163000Z
 DTEND:20261025T183000Z
 SUMMARY:⚽ SC Freiburg – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -88,14 +92,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/match/_/gam
  eId/401884759/bayern-munich-sc-freiburg.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – SC Freiburg – Bayern Munich | https://www.flashsc
+ ore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401917035-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261028T194500Z
 DTEND:20261028T214500Z
 SUMMARY:⚽ Bayern Munich – 1. FC Magdeburg | 📺 TV zatiaľ nepotvrden
@@ -106,14 +111,15 @@ DESCRIPTION:Súťaž: DFB-Pokal\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  ern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/match/_
  /gameId/401917035/1-fc-magdeburg-bayern-munich.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – 1. FC Magdeburg | https://www.fla
+ shscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884754-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261031T173000Z
 DTEND:20261031T193000Z
 SUMMARY:⚽ Bayern Munich – Borussia Dortmund | 📺 TV zatiaľ nepotvrde
@@ -124,14 +130,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  ayern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/match
  /_/gameId/401884754/borussia-dortmund-bayern-munich.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Borussia Dortmund | https://www.f
+ lashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915386-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261103T200000Z
 DTEND:20261103T220000Z
 SUMMARY:⚽ Atlético Madrid – Bayern Munich | 📺 TV zatiaľ nepotvrden
@@ -142,14 +149,15 @@ DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  .sk/tim/bayern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soc
  cer/match/_/gameId/401915386/bayern-munich-atletico-madrid.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Atlético Madrid – Bayern Munich | https://www.fl
+ ashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884740-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261107T143000Z
 DTEND:20261107T163000Z
 SUMMARY:⚽ Mainz – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -159,14 +167,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  qd/program/\nZdroj termínu: https://www.espn.com/soccer/match/_/gameId/40
  1884740/bayern-munich-mainz.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Mainz – Bayern Munich | https://www.flashscore.sk
+ /tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884736-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261120T193000Z
 DTEND:20261120T213000Z
 SUMMARY:⚽ Bayern Munich – FC Cologne | 📺 TV zatiaľ nepotvrdená
@@ -176,14 +185,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  Vp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/match/_/game
  Id/401884736/fc-cologne-bayern-munich.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – FC Cologne | https://www.flashsco
+ re.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915377-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261125T200000Z
 DTEND:20261125T220000Z
 SUMMARY:⚽ Lille – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -193,14 +203,15 @@ DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  ern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/match/_
  /gameId/401915377/bayern-munich-lille.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Lille – Bayern Munich | https://www.flashscore.sk
+ /tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884722-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261128T143000Z
 DTEND:20261128T163000Z
 SUMMARY:⚽ Hamburg SV – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -210,14 +221,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  Vp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/match/_/game
  Id/401884722/bayern-munich-hamburg-sv.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Hamburg SV – Bayern Munich | https://www.flashsco
+ re.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884718-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261205T200000Z
 DTEND:20261205T220000Z
 SUMMARY:⚽ Bayern Munich – SC Paderborn 07 | 📺 TV zatiaľ nepotvrden
@@ -229,14 +241,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  /gameId/401884718/sc-paderborn-07-bayern-munich. Termín je zatiaľ orient
  ačný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – SC Paderborn 07 | https://www.fla
+ shscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915284-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261208T200000Z
 DTEND:20261208T220000Z
 SUMMARY:⚽ Bayern Munich – Slavia Prague | 📺 TV zatiaľ nepotvrdená
@@ -246,14 +259,15 @@ DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  /tim/bayern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer
  /match/_/gameId/401915284/slavia-prague-bayern-munich.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Slavia Prague | https://www.flash
+ score.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884707-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261212T200000Z
 DTEND:20261212T220000Z
 SUMMARY:⚽ TSG Hoffenheim – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -264,14 +278,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  gameId/401884707/bayern-munich-tsg-hoffenheim. Termín je zatiaľ orienta
  čný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – TSG Hoffenheim – Bayern Munich | https://www.flas
+ hscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884700-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20261219T200000Z
 DTEND:20261219T220000Z
 SUMMARY:⚽ Bayern Munich – Werder Bremen | 📺 TV zatiaľ nepotvrdená
@@ -282,14 +297,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  ameId/401884700/werder-bremen-bayern-munich. Termín je zatiaľ orientačn
  ý a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Werder Bremen | https://www.flash
+ score.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884687-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270109T200000Z
 DTEND:20270109T220000Z
 SUMMARY:⚽ Borussia Mönchengladbach – Bayern Munich | 📺 TV zatiaľ n
@@ -301,14 +317,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  er/match/_/gameId/401884687/bayern-munich-borussia-monchengladbach. Termí
  n je zatiaľ orientačný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Borussia Mönchengladbach – Bayern Munich | https
+ ://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884682-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270113T200000Z
 DTEND:20270113T220000Z
 SUMMARY:⚽ Bayern Munich – Bayer Leverkusen | 📺 TV zatiaľ nepotvrden
@@ -320,14 +337,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  _/gameId/401884682/bayer-leverkusen-bayern-munich. Termín je zatiaľ orie
  ntačný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Bayer Leverkusen | https://www.fl
+ ashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884669-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270116T200000Z
 DTEND:20270116T220000Z
 SUMMARY:⚽ Eintracht Frankfurt – Bayern Munich | 📺 TV zatiaľ nepotvr
@@ -339,14 +357,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  ch/_/gameId/401884669/bayern-munich-eintracht-frankfurt. Termín je zatia
  ľ orientačný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Eintracht Frankfurt – Bayern Munich | https://www
+ .flashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915357-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270120T200000Z
 DTEND:20270120T220000Z
 SUMMARY:⚽ Manchester United – Bayern Munich | 📺 TV zatiaľ nepotvrde
@@ -357,14 +376,15 @@ DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  e.sk/tim/bayern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/so
  ccer/match/_/gameId/401915357/bayern-munich-manchester-united.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Manchester United – Bayern Munich | https://www.f
+ lashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884664-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270123T200000Z
 DTEND:20270123T220000Z
 SUMMARY:⚽ VfB Stuttgart – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -375,14 +395,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  ameId/401884664/bayern-munich-vfb-stuttgart. Termín je zatiaľ orientačn
  ý a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – VfB Stuttgart – Bayern Munich | https://www.flash
+ score.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401915348-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270127T200000Z
 DTEND:20270127T220000Z
 SUMMARY:⚽ Bayern Munich – Real Betis | 📺 TV zatiaľ nepotvrdená
@@ -392,14 +413,15 @@ DESCRIPTION:Súťaž: UEFA Champions League\nTV prenos (SK/CZ): zatiaľ nep
  m/bayern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/ma
  tch/_/gameId/401915348/real-betis-bayern-munich.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Real Betis | https://www.flashsco
+ re.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884655-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270130T200000Z
 DTEND:20270130T220000Z
 SUMMARY:⚽ Bayern Munich – Schalke 04 | 📺 TV zatiaľ nepotvrdená
@@ -410,14 +432,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  Id/401884655/schalke-04-bayern-munich. Termín je zatiaľ orientačný a p
  o potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Schalke 04 | https://www.flashsco
+ re.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884646-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270206T200000Z
 DTEND:20270206T220000Z
 SUMMARY:⚽ Bayern Munich – SV Elversberg | 📺 TV zatiaľ nepotvrdená
@@ -428,14 +451,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  ameId/401884646/sv-elversberg-bayern-munich. Termín je zatiaľ orientačn
  ý a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – SV Elversberg | https://www.flash
+ score.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884631-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270213T200000Z
 DTEND:20270213T220000Z
 SUMMARY:⚽ 1. FC Union Berlin – Bayern Munich | 📺 TV zatiaľ nepotvrd
@@ -447,14 +471,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  h/_/gameId/401884631/bayern-munich-1-fc-union-berlin. Termín je zatiaľ o
  rientačný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – 1. FC Union Berlin – Bayern Munich | https://www.
+ flashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884628-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270220T200000Z
 DTEND:20270220T220000Z
 SUMMARY:⚽ Bayern Munich – FC Augsburg | 📺 TV zatiaľ nepotvrdená
@@ -465,14 +490,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  eId/401884628/fc-augsburg-bayern-munich. Termín je zatiaľ orientačný a
   po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – FC Augsburg | https://www.flashsc
+ ore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884618-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270227T200000Z
 DTEND:20270227T220000Z
 SUMMARY:⚽ RB Leipzig – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -483,14 +509,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  Id/401884618/bayern-munich-rb-leipzig. Termín je zatiaľ orientačný a p
  o potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – RB Leipzig – Bayern Munich | https://www.flashsco
+ re.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884610-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270303T200000Z
 DTEND:20270303T220000Z
 SUMMARY:⚽ Bayern Munich – SC Freiburg | 📺 TV zatiaľ nepotvrdená
@@ -501,14 +528,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  eId/401884610/sc-freiburg-bayern-munich. Termín je zatiaľ orientačný a
   po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – SC Freiburg | https://www.flashsc
+ ore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884601-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270306T200000Z
 DTEND:20270306T220000Z
 SUMMARY:⚽ Borussia Dortmund – Bayern Munich | 📺 TV zatiaľ nepotvrde
@@ -520,14 +548,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  /_/gameId/401884601/bayern-munich-borussia-dortmund. Termín je zatiaľ or
  ientačný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Borussia Dortmund – Bayern Munich | https://www.f
+ lashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884592-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270313T200000Z
 DTEND:20270313T220000Z
 SUMMARY:⚽ Bayern Munich – Mainz | 📺 TV zatiaľ nepotvrdená
@@ -538,14 +567,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  1884592/mainz-bayern-munich. Termín je zatiaľ orientačný a po potvrden
  í sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Mainz | https://www.flashscore.sk
+ /tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884576-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270320T180000Z
 DTEND:20270320T200000Z
 SUMMARY:⚽ FC Cologne – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -556,14 +586,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  Id/401884576/bayern-munich-fc-cologne. Termín je zatiaľ orientačný a p
  o potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – FC Cologne – Bayern Munich | https://www.flashsco
+ re.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884574-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270403T180000Z
 DTEND:20270403T200000Z
 SUMMARY:⚽ Bayern Munich – Hamburg SV | 📺 TV zatiaľ nepotvrdená
@@ -574,14 +605,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  Id/401884574/hamburg-sv-bayern-munich. Termín je zatiaľ orientačný a p
  o potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Hamburg SV | https://www.flashsco
+ re.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884557-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270410T180000Z
 DTEND:20270410T200000Z
 SUMMARY:⚽ SC Paderborn 07 – Bayern Munich | 📺 TV zatiaľ nepotvrden
@@ -593,14 +625,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  /gameId/401884557/bayern-munich-sc-paderborn-07. Termín je zatiaľ orient
  ačný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – SC Paderborn 07 – Bayern Munich | https://www.fla
+ shscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884556-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270417T180000Z
 DTEND:20270417T200000Z
 SUMMARY:⚽ Bayern Munich – TSG Hoffenheim | 📺 TV zatiaľ nepotvrdená
@@ -611,14 +644,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  gameId/401884556/tsg-hoffenheim-bayern-munich. Termín je zatiaľ orienta
  čný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – TSG Hoffenheim | https://www.flas
+ hscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884540-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270424T180000Z
 DTEND:20270424T200000Z
 SUMMARY:⚽ Werder Bremen – Bayern Munich | 📺 TV zatiaľ nepotvrdená
@@ -629,14 +663,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  ameId/401884540/bayern-munich-werder-bremen. Termín je zatiaľ orientačn
  ý a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Werder Bremen – Bayern Munich | https://www.flash
+ score.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884538-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270508T180000Z
 DTEND:20270508T200000Z
 SUMMARY:⚽ Bayern Munich – Borussia Mönchengladbach | 📺 TV zatiaľ n
@@ -648,14 +683,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  er/match/_/gameId/401884538/borussia-monchengladbach-bayern-munich. Termí
  n je zatiaľ orientačný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Borussia Mönchengladbach | https
+ ://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884526-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270515T180000Z
 DTEND:20270515T200000Z
 SUMMARY:⚽ Bayer Leverkusen – Bayern Munich | 📺 TV zatiaľ nepotvrden
@@ -667,14 +703,15 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  _/gameId/401884526/bayern-munich-bayer-leverkusen. Termín je zatiaľ orie
  ntačný a po potvrdení sa automaticky upraví.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayer Leverkusen – Bayern Munich | https://www.fl
+ ashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:bayern-men-401884500-v1@ruzindol-kalendar
-DTSTAMP:20261003T150500Z
-SEQUENCE:1791039900
+DTSTAMP:20261003T151250Z
+SEQUENCE:1791040370
 DTSTART:20270522T133000Z
 DTEND:20270522T153000Z
 SUMMARY:⚽ Bayern Munich – Eintracht Frankfurt | 📺 TV zatiaľ nepotvr
@@ -685,7 +722,8 @@ DESCRIPTION:Súťaž: Bundesliga\nTV prenos (SK/CZ): zatiaľ nepotvrdený
  /bayern/nVp0wiqd/program/\nZdroj termínu: https://www.espn.com/soccer/mat
  ch/_/gameId/401884500/eintracht-frankfurt-bayern-munich.
 URL:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
-LOCATION:https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/
+LOCATION:Flashscore – Bayern Munich – Eintracht Frankfurt | https://www
+ .flashscore.sk/tim/bayern/nVp0wiqd/program/
 TRANSP:OPAQUE
 STATUS:CONFIRMED
 END:VEVENT
