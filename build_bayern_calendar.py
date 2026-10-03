@@ -25,6 +25,7 @@ FIXTURES_URL = "https://site.api.espn.com/apis/site/v2/sports/soccer/{league}/sc
 OFFICIAL_URL = "https://fcbayern.com/en/matches/profis"
 TV_BASE = "https://tv-program.sk"
 ONEPLAY_PROGRAM = "https://www.oneplaysport.cz/program?date={date}"
+FLASHSCORE_BAYERN = "https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/"
 TZ = ZoneInfo("Europe/Bratislava")
 UTC = dt.timezone.utc
 
@@ -219,6 +220,21 @@ def channels_for(home_name, away_name, start, broadcasts):
     return channels
 
 
+def final_score(contest):
+    """Return the final home/away score published by ESPN, if available."""
+    scores = {}
+    for item in contest.get("competitors", []):
+        side = item.get("homeAway")
+        score = item.get("score")
+        if side in {"home", "away"} and score is not None:
+            text = str(score).strip()
+            if re.fullmatch(r"\d+", text):
+                scores[side] = text
+    if "home" in scores and "away" in scores:
+        return scores["home"], scores["away"]
+    return None
+
+
 def match_url(event):
     for link in event.get("links", []):
         if link.get("href"):
@@ -233,20 +249,27 @@ def build_event(event, broadcasts, generated_at):
     home = html.unescape(competitors.get("home", {}).get("displayName", "Domáci"))
     away = html.unescape(competitors.get("away", {}).get("displayName", "Hostia"))
     competition = html.unescape(event.get("_competition_name", "Futbal"))
-    base_title = f"⚽ {home} – {away}"
+    score = final_score(contest)
+    state = contest.get("status", {}).get("type", {}).get("state")
+    if state == "post" and score:
+        base_title = f"⚽ {home} {score[0]}:{score[1]} {away}"
+    else:
+        base_title = f"⚽ {home} – {away}"
     event_uid = f"bayern-men-{event['id']}-v1@ruzindol-kalendar"
     channels = channels_for(home, away, start, broadcasts)
     tv = ", ".join(channels) if channels else "zatiaľ nepotvrdený – doplní sa automaticky"
     tv_title = ", ".join(channels) if channels else "TV zatiaľ nepotvrdená"
     title = f"{base_title} | 📺 {tv_title}"
-    url = match_url(event)
+    source_url = match_url(event)
+    flashscore_url = FLASHSCORE_BAYERN
     provisional = not bool(contest.get("timeValid", True))
     time_note = " Termín je zatiaľ orientačný a po potvrdení sa automaticky upraví." if provisional else ""
     description = (
         f"Súťaž: {competition}\n"
         f"TV prenos (SK/CZ): {tv}.\n"
         f"TV program: {TV_BASE}/\n"
-        f"Aktuálny termín: {url}.{time_note}"
+        f"Flashscore – {home} – {away}: {flashscore_url}\n"
+        f"Zdroj termínu: {source_url}.{time_note}"
     )
     lines = [
         "BEGIN:VEVENT",
@@ -257,8 +280,8 @@ def build_event(event, broadcasts, generated_at):
         "DTEND:" + (start + dt.timedelta(hours=2)).strftime("%Y%m%dT%H%M%SZ"),
         "SUMMARY:" + escape(title),
         "DESCRIPTION:" + escape(description),
-        "URL:" + url,
-        "LOCATION:" + escape(contest.get("venue", {}).get("fullName", "")),
+        "URL:" + flashscore_url,
+        "LOCATION:" + escape(flashscore_url),
         "TRANSP:OPAQUE",
         "STATUS:CONFIRMED",
     ]
@@ -278,11 +301,9 @@ def main():
     for fixture in fixtures:
         contest = (fixture.get("competitions") or [{}])[0]
         state = contest.get("status", {}).get("type", {}).get("state")
-        if state == "post":
-            continue
         item = build_event(fixture, broadcasts, generated_at)
         start, lines, has_tv, provisional = item
-        if start < generated_at - dt.timedelta(days=1):
+        if start < generated_at - dt.timedelta(days=14):
             continue
         events.append((start, lines))
         tv_confirmed += int(has_tv)
@@ -307,15 +328,26 @@ def main():
     output = Path("public/bayern-muzi.ics")
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_bytes(("\r\n".join(folded(line) for line in lines) + "\r\n").encode("utf-8"))
+    recent_results = sum(
+        1 for fixture in fixtures
+        if (fixture.get("competitions") or [{}])[0].get("status", {}).get("type", {}).get("state") == "post"
+        and dt.datetime.fromisoformat(fixture["date"].replace("Z", "+00:00")) >= generated_at - dt.timedelta(days=14)
+        and final_score((fixture.get("competitions") or [{}])[0])
+    )
+    future_matches = sum(1 for start, _ in events if start >= generated_at)
+
     Path("public/bayern-status.json").write_text(json.dumps({
         "updated_utc": generated_at.isoformat(),
-        "future_matches": len(events),
+        "future_matches": future_matches,
+        "calendar_matches": len(events),
+        "recent_results": recent_results,
         "matches_with_confirmed_tv_channel": tv_confirmed,
         "provisional_kickoff_times": provisional_count,
         "reminder": "5 minutes before",
         "fixtures_source": "ESPN scoreboards: " + ", ".join(ESPN_LEAGUES),
         "tv_source": TV_BASE,
         "oneplay_source": ONEPLAY_PROGRAM.format(date="YYYY-MM-DD"),
+        "flashscore_link": FLASHSCORE_BAYERN,
         "tv_channels_checked": list(TV_CHANNELS.values()),
         "czech_streaming_checked": [
             "Oneplay Sport 1", "Oneplay Sport 2", "Oneplay Sport 3", "Oneplay Sport 4",
