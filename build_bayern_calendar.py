@@ -9,6 +9,7 @@ import re
 import subprocess
 import sys
 import unicodedata
+import urllib.parse
 import urllib.request
 import uuid
 from pathlib import Path
@@ -26,6 +27,7 @@ OFFICIAL_URL = "https://fcbayern.com/en/matches/profis"
 TV_BASE = "https://tv-program.sk"
 ONEPLAY_PROGRAM = "https://www.oneplaysport.cz/program?date={date}"
 FLASHSCORE_BAYERN = "https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/"
+SHORTCUT_NAME = "Otvoriť Flashscore"
 # Exact match links shared from the Flashscore app, keyed by stable ESPN event ID.
 FLASHSCORE_MATCH_LINKS = {
     "401884777": "https://www.flashscore.sk/r/?t=1&id=nyUApYI6",
@@ -111,6 +113,72 @@ def fetch_fixtures():
     if len(events) < 10:
         raise RuntimeError("Zdroj nevrátil úplný zoznam zápasov Bayernu.")
     return list(events.values())
+
+
+def fetch_flashscore_matches():
+    """Read stable Flashscore event IDs from Bayern's public fixture page."""
+    page = get_text(FLASHSCORE_BAYERN)
+    match = re.search(
+        r'cjs\.initialFeeds\["fixtures"\]\s*=\s*\{\s*data:\s*`(.*?)`',
+        page,
+        re.S,
+    )
+    if not match:
+        raise RuntimeError("Flashscore nevrátil zoznam zápasov Bayernu.")
+    matches = []
+    for block in match.group(1).split("¬~AA÷")[1:]:
+        event_id = block.split("¬", 1)[0].strip()
+        timestamp = re.search(r"¬AD÷(\d+)", block)
+        if not event_id or not timestamp:
+            continue
+        start = dt.datetime.fromtimestamp(int(timestamp.group(1)), UTC)
+        team_names = re.findall(r"¬(?:AE|AF)÷([^¬]+)", block)[:2]
+        matches.append({
+            "date": start.astimezone(TZ).date(),
+            "teams": [normal(name) for name in team_names],
+            "url": f"https://www.flashscore.sk/r/?t=1&id={event_id}",
+        })
+    if len(matches) < 10:
+        raise RuntimeError("Flashscore vrátil neúplný zoznam zápasov Bayernu.")
+    return matches
+
+
+def flashscore_url_for(event, start, flashscore_matches):
+    manual = FLASHSCORE_MATCH_LINKS.get(str(event["id"]))
+    if manual:
+        return manual
+    local_date = start.astimezone(TZ).date()
+    same_day = [item["url"] for item in flashscore_matches if item["date"] == local_date]
+    if len(same_day) == 1:
+        return same_day[0]
+    contest = (event.get("competitions") or [{}])[0]
+    target_names = [
+        normal(item.get("team", {}).get("displayName", ""))
+        for item in contest.get("competitors", [])
+    ]
+    nearby = []
+    for item in flashscore_matches:
+        if abs((item["date"] - local_date).days) > 1:
+            continue
+        joined = " ".join(item["teams"])
+        opponent_words = {
+            word for name in target_names for word in name.split()
+            if len(word) >= 5 and word not in {"bayern", "munich", "munchen", "muenchen", "football"}
+        }
+        if any(word in joined for word in opponent_words):
+            nearby.append(item["url"])
+    if len(nearby) == 1:
+        return nearby[0]
+    raise RuntimeError(f"Nenašiel sa jednoznačný Flashscore zápas pre {local_date}.")
+
+
+def shortcut_url(target_url):
+    query = urllib.parse.urlencode({
+        "name": SHORTCUT_NAME,
+        "input": "text",
+        "text": target_url,
+    }, quote_via=urllib.parse.quote)
+    return "shortcuts://run-shortcut?" + query
 
 
 def parse_tv_page(slug, channel):
@@ -246,7 +314,7 @@ def match_url(event):
     return OFFICIAL_URL
 
 
-def build_event(event, broadcasts, generated_at):
+def build_event(event, broadcasts, flashscore_matches, generated_at):
     contest = (event.get("competitions") or [{}])[0]
     start = dt.datetime.fromisoformat(event["date"].replace("Z", "+00:00"))
     competitors = {item.get("homeAway"): item.get("team", {}) for item in contest.get("competitors", [])}
@@ -265,7 +333,7 @@ def build_event(event, broadcasts, generated_at):
     tv_title = ", ".join(channels) if channels else "TV zatiaľ nepotvrdená"
     title = f"{base_title} | 📺 {tv_title}"
     source_url = match_url(event)
-    flashscore_url = FLASHSCORE_MATCH_LINKS.get(str(event["id"]), FLASHSCORE_BAYERN)
+    flashscore_url = flashscore_url_for(event, start, flashscore_matches)
     provisional = not bool(contest.get("timeValid", True))
     time_note = " Termín je zatiaľ orientačný a po potvrdení sa automaticky upraví." if provisional else ""
     description = (
@@ -284,7 +352,7 @@ def build_event(event, broadcasts, generated_at):
         "DTEND:" + (start + dt.timedelta(hours=2)).strftime("%Y%m%dT%H%M%SZ"),
         "SUMMARY:" + escape(title),
         "DESCRIPTION:" + escape(description),
-        "URL:" + flashscore_url,
+        "URL:" + shortcut_url(flashscore_url),
         "LOCATION:" + escape(f"Flashscore – {home} – {away} | {flashscore_url}"),
         "TRANSP:OPAQUE",
         "STATUS:CONFIRMED",
@@ -298,6 +366,7 @@ def build_event(event, broadcasts, generated_at):
 def main():
     generated_at = dt.datetime.now(UTC)
     fixtures = fetch_fixtures()
+    flashscore_matches = fetch_flashscore_matches()
     broadcasts = fetch_tv_program()
     broadcasts.extend(fetch_oneplay_program(fixtures, generated_at))
     events = []
@@ -305,10 +374,11 @@ def main():
     for fixture in fixtures:
         contest = (fixture.get("competitions") or [{}])[0]
         state = contest.get("status", {}).get("type", {}).get("state")
-        item = build_event(fixture, broadcasts, generated_at)
-        start, lines, has_tv, provisional = item
-        if start < generated_at - dt.timedelta(days=14):
+        fixture_start = dt.datetime.fromisoformat(fixture["date"].replace("Z", "+00:00"))
+        if fixture_start < generated_at - dt.timedelta(days=14):
             continue
+        item = build_event(fixture, broadcasts, flashscore_matches, generated_at)
+        start, lines, has_tv, provisional = item
         events.append((start, lines))
         tv_confirmed += int(has_tv)
         provisional_count += int(provisional)
@@ -352,6 +422,8 @@ def main():
         "tv_source": TV_BASE,
         "oneplay_source": ONEPLAY_PROGRAM.format(date="YYYY-MM-DD"),
         "flashscore_link": FLASHSCORE_BAYERN,
+        "flashscore_exact_match_links": len(flashscore_matches),
+        "iphone_shortcut": SHORTCUT_NAME,
         "tv_channels_checked": list(TV_CHANNELS.values()),
         "czech_streaming_checked": [
             "Oneplay Sport 1", "Oneplay Sport 2", "Oneplay Sport 3", "Oneplay Sport 4",
