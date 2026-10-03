@@ -365,7 +365,7 @@ def build_event(event, broadcasts, flashscore_matches, generated_at):
         "DTEND:" + (start + dt.timedelta(hours=2)).strftime("%Y%m%dT%H%M%SZ"),
         "SUMMARY:" + escape(title),
         "DESCRIPTION:" + escape(description),
-        "URL:" + shortcut_url(flashscore_url),
+        "URL:" + flashscore_url,
         "LOCATION:" + escape(f"Flashscore – {home} – {away} | {flashscore_url}"),
         "TRANSP:OPAQUE",
         "STATUS:CONFIRMED",
