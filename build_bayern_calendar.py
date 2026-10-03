@@ -26,6 +26,10 @@ OFFICIAL_URL = "https://fcbayern.com/en/matches/profis"
 TV_BASE = "https://tv-program.sk"
 ONEPLAY_PROGRAM = "https://www.oneplaysport.cz/program?date={date}"
 FLASHSCORE_BAYERN = "https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/"
+# Exact match links shared from the Flashscore app, keyed by stable ESPN event ID.
+FLASHSCORE_MATCH_LINKS = {
+    "401884777": "https://www.flashscore.sk/r/?t=1&id=nyUApYI6",
+}
 TZ = ZoneInfo("Europe/Bratislava")
 UTC = dt.timezone.utc
 
@@ -261,7 +265,7 @@ def build_event(event, broadcasts, generated_at):
     tv_title = ", ".join(channels) if channels else "TV zatiaľ nepotvrdená"
     title = f"{base_title} | 📺 {tv_title}"
     source_url = match_url(event)
-    flashscore_url = FLASHSCORE_BAYERN
+    flashscore_url = FLASHSCORE_MATCH_LINKS.get(str(event["id"]), FLASHSCORE_BAYERN)
     provisional = not bool(contest.get("timeValid", True))
     time_note = " Termín je zatiaľ orientačný a po potvrdení sa automaticky upraví." if provisional else ""
     description = (
