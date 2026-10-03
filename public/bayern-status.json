@@ -1,12 +1,15 @@
 {
-  "updated_utc": "2026-10-03T07:23:55.949584+00:00",
+  "updated_utc": "2026-10-03T15:05:00.935079+00:00",
   "future_matches": 38,
+  "calendar_matches": 38,
+  "recent_results": 0,
   "matches_with_confirmed_tv_channel": 0,
   "provisional_kickoff_times": 22,
   "reminder": "5 minutes before",
   "fixtures_source": "ESPN scoreboards: ger.1, uefa.champions, ger.dfb_pokal",
   "tv_source": "https://tv-program.sk",
   "oneplay_source": "https://www.oneplaysport.cz/program?date=YYYY-MM-DD",
+  "flashscore_link": "https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/",
   "tv_channels_checked": [
     "Nova Sport 1",
     "Nova Sport 2",
