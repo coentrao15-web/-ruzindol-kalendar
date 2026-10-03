@@ -30,7 +30,7 @@ FLASHSCORE_BAYERN = "https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/"
 SHORTCUT_NAME = "Otvoriť Flashscore"
 # Exact match links shared from the Flashscore app, keyed by stable ESPN event ID.
 FLASHSCORE_MATCH_LINKS = {
-    "401884777": "https://www.flashscore.sk/r/?t=1&id=nyUApYI6",
+    "401884777": "https://www.flashscore.sk/zapas/futbal/augsburg-fTVNku3I/bayern-nVp0wiqd/?mid=nyUApYI6",
 }
 TZ = ZoneInfo("Europe/Bratislava")
 UTC = dt.timezone.utc
@@ -132,11 +132,24 @@ def fetch_flashscore_matches():
         if not event_id or not timestamp:
             continue
         start = dt.datetime.fromtimestamp(int(timestamp.group(1)), UTC)
-        team_names = re.findall(r"¬(?:AE|AF)÷([^¬]+)", block)[:2]
+        home_name = re.search(r"¬AE÷([^¬]+)", block)
+        away_name = re.search(r"¬AF÷([^¬]+)", block)
+        home_id = re.search(r"¬PX÷([^¬]+)", block)
+        away_id = re.search(r"¬PY÷([^¬]+)", block)
+        home_slug = re.search(r"¬WU÷([^¬]+)", block)
+        away_slug = re.search(r"¬WV÷([^¬]+)", block)
+        if not all((home_name, away_name, home_id, away_id, home_slug, away_slug)):
+            continue
+        team_names = [home_name.group(1), away_name.group(1)]
+        exact_url = (
+            f"https://www.flashscore.sk/zapas/futbal/"
+            f"{home_slug.group(1)}-{home_id.group(1)}/"
+            f"{away_slug.group(1)}-{away_id.group(1)}/?mid={event_id}"
+        )
         matches.append({
             "date": start.astimezone(TZ).date(),
             "teams": [normal(name) for name in team_names],
-            "url": f"https://www.flashscore.sk/r/?t=1&id={event_id}",
+            "url": exact_url,
         })
     if len(matches) < 10:
         raise RuntimeError("Flashscore vrátil neúplný zoznam zápasov Bayernu.")
