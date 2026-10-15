@@ -116,17 +116,19 @@ def fetch_fixtures():
 
 
 def fetch_flashscore_matches():
-    """Read stable Flashscore event IDs from Bayern's public fixture page."""
+    """Read stable Flashscore event IDs from Bayern's fixtures and results pages."""
+    blocks = []
     page = get_text(FLASHSCORE_BAYERN)
-    match = re.search(
-        r'cjs\.initialFeeds\["fixtures"\]\s*=\s*\{\s*data:\s*`(.*?)`',
-        page,
-        re.S,
-    )
-    if not match:
-        raise RuntimeError("Flashscore nevrátil zoznam zápasov Bayernu.")
-    matches = []
-    for block in match.group(1).split("¬~AA÷")[1:]:
+    for feed_name in ("fixtures", "results"):
+        match = re.search(
+            rf'cjs\.initialFeeds\["{feed_name}"\]\s*=\s*\{{\s*data:\s*`(.*?)`',
+            page,
+            re.S,
+        )
+        if match:
+            blocks.extend(match.group(1).split("¬~AA÷")[1:])
+    matches_by_id = {}
+    for block in blocks:
         event_id = block.split("¬", 1)[0].strip()
         timestamp = re.search(r"¬AD÷(\d+)", block)
         if not event_id or not timestamp:
@@ -146,11 +148,12 @@ def fetch_flashscore_matches():
             f"{home_slug.group(1)}-{home_id.group(1)}/"
             f"{away_slug.group(1)}-{away_id.group(1)}/?mid={event_id}"
         )
-        matches.append({
+        matches_by_id[event_id] = {
             "date": start.astimezone(TZ).date(),
             "teams": [normal(name) for name in team_names],
             "url": exact_url,
-        })
+        }
+    matches = list(matches_by_id.values())
     if len(matches) < 10:
         raise RuntimeError("Flashscore vrátil neúplný zoznam zápasov Bayernu.")
     return matches
