@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-11-01T18:23:48.930791+00:00",
+  "updated_utc": "2026-11-01T22:44:15.985893+00:00",
   "future_matches": 31,
   "calendar_matches": 35,
   "recent_results": 4,
@@ -10,7 +10,7 @@
   "tv_source": "https://tv-program.sk",
   "oneplay_source": "https://www.oneplaysport.cz/program?date=YYYY-MM-DD",
   "flashscore_link": "https://www.flashscore.sk/tim/bayern/nVp0wiqd/program/",
-  "flashscore_exact_match_links": 75,
+  "flashscore_exact_match_links": 76,
   "iphone_shortcut": "Otvoriť Flashscore",
   "tv_channels_checked": [
     "Nova Sport 1",
