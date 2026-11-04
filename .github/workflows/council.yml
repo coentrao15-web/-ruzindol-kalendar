@@ -35,6 +35,15 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -m "Update Ruzindol council meetings"
-            git pull --rebase origin main
-            git push
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin main
+              if git push; then
+                exit 0
+              fi
+              if [ "$attempt" -lt 5 ]; then
+                sleep $((attempt * 10))
+              fi
+            done
+            echo "Uloženie kalendára zlyhalo aj po 5 pokusoch."
+            exit 1
           fi
