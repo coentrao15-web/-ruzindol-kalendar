@@ -185,6 +185,16 @@ def flashscore_url_for(event, start, flashscore_matches):
             nearby.append(item["url"])
     if len(nearby) == 1:
         return nearby[0]
+    # Flashscore does not always publish exact match pages for distant,
+    # not-yet-scheduled Bundesliga rounds. Keep the calendar working and
+    # replace this team-page fallback automatically once the exact link appears.
+    if start > dt.datetime.now(UTC) + dt.timedelta(days=45):
+        print(
+            f"Presný Flashscore odkaz pre {local_date} ešte nie je dostupný; "
+            "dočasne sa použije program Bayernu.",
+            file=sys.stderr,
+        )
+        return FLASHSCORE_BAYERN
     raise RuntimeError(f"Nenašiel sa jednoznačný Flashscore zápas pre {local_date}.")
 
 
