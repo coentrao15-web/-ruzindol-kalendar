@@ -1,12 +1,12 @@
 {
-  "updated_utc": "2026-11-07T08:45:04.902378+00:00",
+  "updated_utc": "2026-11-07T18:45:59.614152+00:00",
   "teams": {
-    "dospeli-m-a": 16,
-    "u09-m-a": 14,
+    "dospeli-m-a": 15,
+    "u09-m-a": 13,
     "u15-m-a": 7,
     "u17-m-a": 10
   },
-  "matches": 45,
+  "matches": 43,
   "matches_with_result": 6,
   "source": "https://sportnet.sme.sk/futbalnet/k/osk-ruzindol/"
 }
