@@ -94,10 +94,11 @@ Kontrola poslednej úspešnej aktualizácie:
 
 ## TT.CHVÁLY – Trnava
 
-Samostatný odoberaný kalendár obsahuje pravidelné stretnutia TT.CHVÁLY: prvý
-pondelok v mesiaci o 19:00 v Jezuitskom kostole Najsvätejšej Trojice v Trnave.
+Samostatný odoberaný kalendár sleduje potvrdené termíny na oficiálnej stránke
+TT.CHVÁLY. Ak ich stránka dočasne nenačíta, použije pravidelný harmonogram:
+prvý pondelok v mesiaci o 18:00 v Kostole Najsvätejšej Trojice v Trnave.
 Každá udalosť má upozornenie 2 dni a 1 hodinu 30 minút pred začiatkom.
-Oficiálny harmonogram sa kontroluje automaticky raz denne.
+Oficiálna stránka sa kontroluje automaticky raz denne.
 
 Odoberaná adresa:
 `https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/tt-chvaly.ics`
