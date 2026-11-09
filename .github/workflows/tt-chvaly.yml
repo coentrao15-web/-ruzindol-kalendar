@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - 'build_tt_chvaly_calendar.py'
+      - 'data/tt-chvaly-confirmed.json'
       - '.github/workflows/tt-chvaly.yml'
   schedule:
     - cron: '17 4 * * *'
