@@ -1,0 +1,585 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Ruzindol calendar//TT Chvaly Trnava//SK
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:TT.CHVÁLY – Trnava
+X-WR-TIMEZONE:Europe/Bratislava
+REFRESH-INTERVAL;VALUE=DURATION:PT24H
+X-PUBLISHED-TTL:PT24H
+BEGIN:VEVENT
+UID:tt-chvaly-20261207@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20261207T180000Z
+DTEND:20261207T200000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20270104@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20270104T180000Z
+DTEND:20270104T200000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20270201@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20270201T180000Z
+DTEND:20270201T200000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20270301@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20270301T180000Z
+DTEND:20270301T200000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20270405@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20270405T170000Z
+DTEND:20270405T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20270503@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20270503T170000Z
+DTEND:20270503T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20270607@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20270607T170000Z
+DTEND:20270607T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20270705@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20270705T170000Z
+DTEND:20270705T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20270802@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20270802T170000Z
+DTEND:20270802T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20270906@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20270906T170000Z
+DTEND:20270906T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20271004@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20271004T170000Z
+DTEND:20271004T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20271101@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20271101T180000Z
+DTEND:20271101T200000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20271206@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20271206T180000Z
+DTEND:20271206T200000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20280103@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20280103T180000Z
+DTEND:20280103T200000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20280207@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20280207T180000Z
+DTEND:20280207T200000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20280306@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20280306T180000Z
+DTEND:20280306T200000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20280403@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20280403T170000Z
+DTEND:20280403T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20280501@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20280501T170000Z
+DTEND:20280501T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20280605@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20280605T170000Z
+DTEND:20280605T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20280703@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20280703T170000Z
+DTEND:20280703T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20280807@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20280807T170000Z
+DTEND:20280807T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20280904@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20280904T170000Z
+DTEND:20280904T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:tt-chvaly-20281002@ruzindol-kalendar
+DTSTAMP:20261109T134844Z
+DTSTART:20281002T170000Z
+DTEND:20281002T190000Z
+SUMMARY:🙌 TT.CHVÁLY
+LOCATION:Jezuitský kostol Najsvätejšej Trojice\, Štefánikova 45\, Trna
+ va
+DESCRIPTION:Otvorené modlitbové stretnutie: chvály\, slovo a modlitby pr
+ íhovoru.\nPravidelný termín: prvý pondelok v mesiaci o 19:00.\nAktuál
+ ne informácie: https://www.ttchvaly.sk/
+URL:https://www.ttchvaly.sk/
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-P2D
+DESCRIPTION:🙌 TT.CHVÁLY – o 2 dni
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER;RELATED=START:-PT1H30M
+DESCRIPTION:🙌 TT.CHVÁLY – o 1\,5 hodiny
+END:VALARM
+END:VEVENT
+END:VCALENDAR
