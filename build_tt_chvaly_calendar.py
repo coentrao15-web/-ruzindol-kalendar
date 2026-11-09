@@ -76,6 +76,7 @@ def parse_source():
         regular_time = dt.time(int(schedule_match.group(1)), int(schedule_match.group(2)))
 
     confirmed = []
+    cancelled_months = set()
     for raw in re.findall(r"<time\b[^>]*\bdatetime=[\"']([^\"']+)[\"'][^>]*>", page, re.I):
         try:
             value = dt.datetime.fromisoformat(raw.replace("Z", "+00:00"))
@@ -102,17 +103,20 @@ def parse_source():
                     value = value.astimezone(TZ)
                 else:
                     value = value.replace(tzinfo=TZ)
-                confirmed.append(value)
+                if str(item.get("status", "confirmed")).lower() == "cancelled":
+                    cancelled_months.add((value.year, value.month))
+                else:
+                    confirmed.append(value)
             except (KeyError, TypeError, ValueError):
                 continue
 
     unique = {}
     for value in confirmed:
         unique[(value.date(), value.time().replace(tzinfo=None))] = value
-    return regular_time, sorted(unique.values())
+    return regular_time, sorted(unique.values()), cancelled_months
 
 
-def build_schedule(today, regular_time, confirmed):
+def build_schedule(today, regular_time, confirmed, cancelled_months):
     confirmed_by_month = {}
     for value in confirmed:
         if value.date() >= today:
@@ -122,6 +126,8 @@ def build_schedule(today, regular_time, confirmed):
     confirmed_count = 0
     for offset in range(MONTHS_AHEAD):
         year, month = add_months(today.year, today.month, offset)
+        if (year, month) in cancelled_months:
+            continue
         month_confirmed = confirmed_by_month.get((year, month), [])
         if month_confirmed:
             for value in month_confirmed:
@@ -180,8 +186,8 @@ def build_event(start_local, generated_at, confirmed):
 def main():
     generated_at = dt.datetime.now(UTC)
     today = generated_at.astimezone(TZ).date()
-    regular_time, confirmed = parse_source()
-    events, confirmed_count = build_schedule(today, regular_time, confirmed)
+    regular_time, confirmed, cancelled_months = parse_source()
+    events, confirmed_count = build_schedule(today, regular_time, confirmed, cancelled_months)
 
     lines = [
         "BEGIN:VCALENDAR",
@@ -206,7 +212,8 @@ def main():
     Path("public/tt-chvaly-status.json").write_text(json.dumps({
         "updated_utc": generated_at.isoformat(),
         "events": len(events),
-        "confirmed_events_from_official_page": confirmed_count,
+        "confirmed_events_from_sources": confirmed_count,
+        "cancelled_months_from_sources": len(cancelled_months),
         "next_event": next_event,
         "regular_schedule": f"spravidla prvý pondelok v mesiaci o {regular_time:%H:%M}",
         "source_mode": "confirmed dates from official page, regular schedule as fallback",
