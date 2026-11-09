@@ -1,12 +1,14 @@
 {
-  "updated_utc": "2026-11-09T13:48:44.450962+00:00",
+  "updated_utc": "2026-11-09T13:58:31.610608+00:00",
   "events": 23,
-  "next_event": "2026-12-07T19:00:00+01:00",
-  "schedule": "prvý pondelok v mesiaci o 19:00",
-  "location": "Jezuitský kostol Najsvätejšej Trojice, Trnava",
+  "confirmed_events_from_official_page": 0,
+  "next_event": "2026-12-07T18:00:00+01:00",
+  "regular_schedule": "spravidla prvý pondelok v mesiaci o 18:00",
+  "source_mode": "confirmed dates from official page, regular schedule as fallback",
+  "location": "Kostol Najsvätejšej Trojice, Štefánikova 45, Trnava",
   "alerts": [
     "2 days before",
     "1 hour 30 minutes before"
   ],
-  "source": "https://www.ttchvaly.sk/"
+  "source": "https://ttchvaly.sk/"
 }
