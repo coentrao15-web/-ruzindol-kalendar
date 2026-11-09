@@ -1,0 +1,49 @@
+name: Aktualizovať kalendár TT.CHVÁLY Trnava
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'build_tt_chvaly_calendar.py'
+      - '.github/workflows/tt-chvaly.yml'
+  schedule:
+    - cron: '17 4 * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tt-chvaly-calendar
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Overiť harmonogram a vytvoriť kalendár
+        run: python build_tt_chvaly_calendar.py
+      - name: Zverejniť aktualizovaný kalendár
+        run: |
+          git add public/tt-chvaly.ics public/tt-chvaly-status.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update TT Chvaly calendar"
+            for attempt in 1 2 3 4 5; do
+              git pull --rebase origin main
+              if git push; then
+                exit 0
+              fi
+              if [ "$attempt" -lt 5 ]; then
+                sleep $((attempt * 10))
+              fi
+            done
+            echo "Uloženie kalendára zlyhalo aj po 5 pokusoch."
+            exit 1
+          fi
