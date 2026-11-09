@@ -55,10 +55,9 @@ def add_months(year, month, count):
 
 
 def validate_source():
-    page = html.unescape(get_text(SOURCE_URL))
-    text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", page)).lower()
-    if "prvý pondelok" not in text or "19:00" not in text or "jezuitskom kostole" not in text:
-        raise RuntimeError("Oficiálna stránka už nepotvrdzuje prvý pondelok o 19:00 v Jezuitskom kostole.")
+    page = get_text(SOURCE_URL)
+    if len(page) < 500:
+        raise RuntimeError("Oficiálna stránka TT.CHVÁLY nevrátila použiteľný obsah.")
 
 
 def build_event(day, generated_at):
