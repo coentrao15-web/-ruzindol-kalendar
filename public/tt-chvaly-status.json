@@ -1,7 +1,8 @@
 {
-  "updated_utc": "2026-11-09T13:59:46.497375+00:00",
+  "updated_utc": "2026-11-09T14:00:28.069099+00:00",
   "events": 23,
-  "confirmed_events_from_official_page": 0,
+  "confirmed_events_from_sources": 0,
+  "cancelled_months_from_sources": 0,
   "next_event": "2026-12-07T18:00:00+01:00",
   "regular_schedule": "spravidla prvý pondelok v mesiaci o 18:00",
   "source_mode": "confirmed dates from official page, regular schedule as fallback",
