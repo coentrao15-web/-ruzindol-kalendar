@@ -17,6 +17,7 @@ TZ = ZoneInfo("Europe/Bratislava")
 UTC = dt.timezone.utc
 MONTHS_AHEAD = 24
 DEFAULT_TIME = dt.time(18, 0)
+CONFIRMED_DATA = Path("data/tt-chvaly-confirmed.json")
 
 
 def get_text(url):
@@ -90,6 +91,19 @@ def parse_source():
                 day = dt.date.fromisoformat(raw[:10])
                 confirmed.append(dt.datetime.combine(day, regular_time, TZ))
             except ValueError:
+                continue
+
+    if CONFIRMED_DATA.exists():
+        payload = json.loads(CONFIRMED_DATA.read_text(encoding="utf-8"))
+        for item in payload.get("events", []):
+            try:
+                value = dt.datetime.fromisoformat(str(item["start"]).replace("Z", "+00:00"))
+                if value.tzinfo:
+                    value = value.astimezone(TZ)
+                else:
+                    value = value.replace(tzinfo=TZ)
+                confirmed.append(value)
+            except (KeyError, TypeError, ValueError):
                 continue
 
     unique = {}
