@@ -90,3 +90,19 @@ Odoberaná adresa:
 
 Kontrola poslednej úspešnej aktualizácie:
 `https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/bayern-status.json`
+
+
+## TT.CHVÁLY – Trnava
+
+Samostatný odoberaný kalendár obsahuje pravidelné stretnutia TT.CHVÁLY: prvý
+pondelok v mesiaci o 19:00 v Jezuitskom kostole Najsvätejšej Trojice v Trnave.
+Každá udalosť má upozornenie 2 dni a 1 hodinu 30 minút pred začiatkom.
+Oficiálny harmonogram sa kontroluje automaticky raz denne.
+
+Odoberaná adresa:
+`https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/tt-chvaly.ics`
+
+Kontrola poslednej úspešnej aktualizácie:
+`https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/tt-chvaly-status.json`
+
+Zdroj: [TT.CHVÁLY](https://www.ttchvaly.sk/).
