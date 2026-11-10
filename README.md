@@ -59,6 +59,13 @@ pozvánky na úradnej tabuli obce. Pozvánka má prednosť pred ročným plánom
 Kontrola prebieha štyrikrát denne a pri každom zasadnutí sú upozornenia 1 deň
 a 1 hodinu pred začiatkom. Koniec je odhadnutý na 3 hodiny po začiatku.
 
+Kalendár uchováva aj minulé zasadnutia. Z oficiálneho archívu Dokumenty načíta
+PDF zápisnice, overí dátum zasadnutia v nadpise dokumentu a ku konkrétnej
+udalosti automaticky doplní odkaz v popise aj PDF prílohu. Zápisnice kontroluje
+pri každej aktualizácii (štyrikrát denne); už overené odkazy zachová aj pri
+krátkom výpadku zdroja. Ak dátum z PDF nemožno bezpečne prečítať, odkaz
+nepriradí naslepo. Upozornenia aj adresa odoberaného kalendára ostávajú rovnaké.
+
 Odoberaná adresa:
 `https://raw.githubusercontent.com/coentrao15-web/-ruzindol-kalendar/main/public/ruzindol-zastupitelstvo.ics`
 
