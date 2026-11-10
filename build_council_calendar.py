@@ -295,6 +295,8 @@ def event(start, source_url, generated_at, minutes=None, location=None):
     end_utc = (start + ESTIMATED_DURATION).astimezone(UTC)
     key = start.strftime("%Y%m%d-%H%M")
     title = "🏛️ Obecné zastupiteľstvo Ružindol"
+    if minutes:
+        title += " – zápisnica dostupná"
     description = "Oficiálny termín obce Ružindol. Predpokladané trvanie 3 hodiny. Aktuálne informácie: " + source_url
     if minutes:
         description += "\n\nZápisnica z tohto zasadnutia: " + minutes["url"]
