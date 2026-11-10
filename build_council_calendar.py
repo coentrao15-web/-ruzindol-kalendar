@@ -310,7 +310,9 @@ def event(start, source_url, generated_at, minutes=None, location=None):
         "SUMMARY:" + escape(title),
         "LOCATION:" + escape(location or "Zasadačka Obecného úradu Ružindol"),
         "DESCRIPTION:" + escape(description),
-        "URL:" + source_url,
+        # Apple Calendar shows URL more prominently than links inside DESCRIPTION.
+        # When minutes exist, make that visible link open the exact PDF.
+        "URL:" + (minutes["url"] if minutes else source_url),
         "STATUS:CONFIRMED",
         "TRANSP:OPAQUE",
     ]
