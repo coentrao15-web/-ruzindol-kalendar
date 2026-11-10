@@ -1,11 +1,68 @@
 {
-  "updated_utc": "2026-11-10T13:16:34.186897+00:00",
-  "meetings": 2,
+  "updated_utc": "2026-11-10T13:17:03.489955+00:00",
+  "meetings": 9,
   "planned_found": 54,
   "invitations_found": 1,
-  "sha256": "163456f60af9fec153729b0468fd813fa93ff77dfd6ca1944c0c5f17a3697371",
+  "meetings_with_minutes": 7,
+  "minutes": {
+    "2025-03-03": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=data/multipage/editor/editor-5-44-sk_80.pdf&original=Z%C3%A1pisnica%201_2025.pdf",
+      "title": "Zápisnica zo zasadnutia OZ 1/2025"
+    },
+    "2025-06-02": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_83.pdf&original=Zapisnica%202_2025.pdf",
+      "title": "Zápisnica zo zasadnutia OZ 2/2025"
+    },
+    "2025-09-01": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_81.pdf&original=Zapisnica%203_2025.pdf",
+      "title": "Zápisnica zo zasadnutia OZ 3/2025"
+    },
+    "2025-10-30": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_82.pdf&original=Zapisnica%204_2025.pdf",
+      "title": "Zápisnica zo zasadnutia OZ 4/2025"
+    },
+    "2025-11-17": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_85.pdf&original=Zapisnica%20zo%20zasadnutia%20OZ%205_2025.pdf",
+      "title": "Zapisnica zo zasadnutia OZ 5_2025"
+    },
+    "2025-12-16": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_84.pdf&original=Zapisnica%20zo%20zasadnutia%20%20OZ%206_2025.pdf",
+      "title": "Zapisnica zo zasadnutia OZ 6_2025"
+    },
+    "2026-02-13": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_87.pdf&original=Z%C3%A1pisnica%20zo%20zasadnutia%20OZ%201_2026.pdf",
+      "title": "Zápisnica zo zasadnutia OZ 1_2026"
+    },
+    "2026-03-16": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_89.pdf&original=Z%C3%A1pisnica%20zo%20zasadnutia%20OZ%202_2026.pdf",
+      "title": "Zápisnica zo zasadnutia OZ 2_2026"
+    },
+    "2026-04-27": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_88.pdf&original=Z%C3%A1pisnica%20zo%20zasadnutia%20OZ_3_2026.pdf",
+      "title": "Zápisnica zo zasadnutia OZ_3_2026"
+    },
+    "2026-05-25": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_86.pdf&original=Z%C3%A1psnica%20zo%20zasadnutia%20OZ_4_2026.pdf",
+      "title": "Zápsnica zo zasadnutia OZ_4_2026"
+    },
+    "2026-06-15": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_91.pdf&original=Z%C3%A1pisnica%20zo%20zasadnutia%20OZ%20%205_2026%20%C4%8D.pdf",
+      "title": "Zápisnica zo zasadnutia OZ 5_2026"
+    },
+    "2026-08-17": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_90.pdf&original=Z%C3%A1psnica%20zo%20zasadnutia%20OZ_6_2026%20%20.pdf",
+      "title": "Zápsnica zo zasadnutia OZ_6_2026"
+    },
+    "2026-09-28": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_92.pdf&original=Z%C3%A1psnica%20%C4%8D.%207_2026%20%20nov%C3%A9%20.pdf",
+      "title": "Zápisnica zo zasadnutia OZ_7_2026"
+    }
+  },
+  "sha256": "a552b5d449480dc5b9f322f1911f3b634f59b868fec1f6d003e4eb501a41363b",
   "sources": [
     "https://www.ruzindol.sk/samosprava/terminy-zasadnutia-oz/",
-    "https://www.ruzindol.sk/seniori/obecny-urad/zverejnovanie/uradna-tabula/"
+    "https://www.ruzindol.sk/seniori/obecny-urad/zverejnovanie/uradna-tabula/",
+    "https://www.ruzindol.sk/obcan/aktuality/",
+    "https://www.ruzindol.sk/obecny-urad/dokumenty/"
   ]
 }
