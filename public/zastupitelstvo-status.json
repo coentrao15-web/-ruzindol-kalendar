@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-11-09T23:31:44.631458+00:00",
+  "updated_utc": "2026-11-10T10:17:06.551343+00:00",
   "meetings": 2,
-  "planned_found": 53,
+  "planned_found": 54,
   "invitations_found": 1,
-  "sha256": "54777b319ee7a709759e801cabf67caf01fe5239927ddc2ba4d7c7ea6df0b410",
+  "sha256": "17da67fa816e920c12fa94acf8e80385bd2cd3c4e31011108b2d204b62acdda7",
   "sources": [
     "https://www.ruzindol.sk/samosprava/terminy-zasadnutia-oz/",
     "https://www.ruzindol.sk/seniori/obecny-urad/zverejnovanie/uradna-tabula/"
