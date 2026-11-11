@@ -1,9 +1,9 @@
 {
-  "updated_utc": "2026-11-11T09:47:16.472271+00:00",
+  "updated_utc": "2026-11-11T21:30:08.766945+00:00",
   "meetings": 9,
   "planned_found": 54,
-  "invitations_found": 1,
-  "meetings_with_minutes": 7,
+  "invitations_found": 0,
+  "meetings_with_minutes": 8,
   "minutes": {
     "2025-03-03": {
       "url": "https://www.ruzindol.sk/e_download.php?file=data/multipage/editor/editor-5-44-sk_80.pdf&original=Z%C3%A1pisnica%201_2025.pdf",
@@ -56,9 +56,13 @@
     "2026-09-28": {
       "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_92.pdf&original=Z%C3%A1psnica%20%C4%8D.%207_2026%20%20nov%C3%A9%20.pdf",
       "title": "Zápisnica zo zasadnutia OZ_7_2026"
+    },
+    "2026-11-09": {
+      "url": "https://www.ruzindol.sk/e_download.php?file=/data/multipage/editor/editor-5-44-sk_93.pdf&original=Z%C3%81PISNICA.pdf",
+      "title": "Zápisnica zo zasadnutia OZ_8_2026"
     }
   },
-  "sha256": "16c59801d84478188ab06e52ec5e6b7b3216279992a545a9191786b3a372349b",
+  "sha256": "e0d918356f75cc3572b2e6c9646c69d787bd2f20249f746303560e5bb97d3ae8",
   "sources": [
     "https://www.ruzindol.sk/samosprava/terminy-zasadnutia-oz/",
     "https://www.ruzindol.sk/seniori/obecny-urad/zverejnovanie/uradna-tabula/",
